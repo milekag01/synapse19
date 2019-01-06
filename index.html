@@ -3,11 +3,24 @@
             <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Synapse'19</title>
-        
+        <link rel="shortcut icon" href="img/favicon.png">
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="slideshow.css"/>
         <link rel="stylesheet" type="text/css" href="navigation.css"/>
+
+    <!-- COVER KI LINKS -->
+        <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/cover.css">
+        <script src="js/TweenMax.min.js"></script>
+        <script src="js/CustomEase.min.js"></script>
+        <script src="js/DrawSVGPlugin.js"></script>
+        <script src="js/jquery-latest.js"></script>
+        <script src="js/mobile-detect.min.js"></script>
+        <script src="https://code.createjs.com/1.0.0/soundjs.min.js"></script>
+    <!-- COVER KI LINKS ENDS ) -->
+
         <link rel="stylesheet" type="text/css" href="index.css"/>
 
     </head>
@@ -25,15 +38,749 @@
         </div>
         <!-- nav bar ends here -->
         <ul class="outer-nav">
-            <li><a href="#red">Red</a></li>
-            <li><a href="#green">green</a></li>
-            <li><a href="#blue">blue</a></li>
-            <li><a href="#yellow">yellow</a></li>
+            <li><a href="#red">HOME</a></li>
+            <li><a href="#green">ABOUT US</a></li>
+            <li><a href="#blue">PRONITES</a></li>
+            <li><a href="#yellow">GLIMPSE</a></li>
         </ul>
 
         <div id="main-container">
             <div id="red" class="fullpage">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium tempora magnam recusandae in cumque delectus numquam iure et mollitia, incidunt fugit reiciendis tempore eveniet quidem impedit aliquid voluptatibus, fuga aspernatur.
+                <!--/////////////////////////////////////////////////////////////////// COVER PAGE STARTS -->
+                <div id="loader" class="loader"></div>
+
+                <!-- BACKGROUND KA CLOUD -->
+                <div id="Clouds">
+                    <div class="Cloud Foreground"></div>
+                    <div class="Cloud Background"></div>
+                    <div class="Cloud Foreground"></div>
+                    <div class="Cloud Background"></div>
+                    <div class="Cloud Foreground"></div>
+                    <div class="Cloud Background"></div>
+                    <div class="Cloud Background"></div>
+                    <div class="Cloud Foreground"></div>
+                    <div class="Cloud Background"></div>
+                    <div class="Cloud Background"></div>
+                  <!--  <svg viewBox="0 0 40 24" class="Cloud"><use xlink:href="#Cloud"></use></svg>-->
+                  </div>
+                  
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       width="40px" height="24px" viewBox="0 0 40 24" enable- xml:space="preserve">
+                    <defs>
+                      <path id="Cloud" d="M33.85,14.388c-0.176,0-0.343,0.034-0.513,0.054c0.184-0.587,0.279-1.208,0.279-1.853c0-3.463-2.809-6.271-6.272-6.271
+                      c-0.38,0-0.752,0.039-1.113,0.104C24.874,2.677,21.293,0,17.083,0c-5.379,0-9.739,4.361-9.739,9.738
+                      c0,0.418,0.035,0.826,0.084,1.229c-0.375-0.069-0.761-0.11-1.155-0.11C2.811,10.856,0,13.665,0,17.126
+                      c0,3.467,2.811,6.275,6.272,6.275c0.214,0,27.156,0.109,27.577,0.109c2.519,0,4.56-2.043,4.56-4.562
+                      C38.409,16.43,36.368,14.388,33.85,14.388z"/>
+                    </defs>
+                  </svg>
+                <!-- CLOUD AA GAYA -->
+                            <div id="balls" class="balls fade">
+                <svg width="972px" height="200px" viewBox="0 0 972 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g class="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g class="iPad-Pro" transform="translate(-26.000000, 0.000000)" stroke="#FFDB5E" fill="#FFDB5E">
+                            <g class="Group-12" transform="translate(27.000000, -57.000000)">
+                                <g class="Group-2" transform="translate(82.000000, 57.000000)">
+                                    <path d="M16.5,0 L16.5,78.6089109" class="Line" stroke-linecap="square"></path>
+                                    <polygon class="Star" points="16.5 103.75 6.80154334 108.84878 8.65378374 98.0493902 0.807567481 90.4012196 11.6507717 88.8256098 16.5 79 21.3492283 88.8256098 32.1924325 90.4012196 24.3462163 98.0493902 26.1984567 108.84878"></polygon>
+                                </g>
+                                <!-- //////////////////////// -->
+                                <g class="Group-2" transform="translate(320.000000, 32.000000)">
+                                    <path d="M14.5,0 L14.5,100.5" class="Line" stroke-linecap="square"></path>
+                                    <polygon class="Star" points="14.5 133.25 5.97711384 139.893865 7.60484026 125.821933 0.709680514 115.856135 10.2385569 113.803067 14.5 101 18.7614431 113.803067 28.2903195 115.856135 21.3951597 125.821933 23.0228862 139.893865"></polygon>
+                                </g>
+                                <g class="Group-2" transform="translate(467.000000, 46.000000)">
+                                    <path d="M18.5,0.5 L18.5,104.574257" class="Line" stroke-linecap="square"></path>
+                                    <polygon class="Star" points="18 132 7.41986546 137.562306 9.44049135 125.781153 0.880982707 117.437694 12.7099327 115.718847 18 105 23.2900673 115.718847 35.1190173 117.437694 26.5595086 125.781153 28.5801345 137.562306"></polygon>
+                                </g>
+                                <g class="Group-2" transform="translate(662.000000, 0.000000)">
+                                    <path d="M21.5,0 L21.5,100.5" class="Line" stroke-linecap="square"></path>
+                                    <polygon class="Star" points="21.5 133.25 8.86261708 139.893865 11.2761424 125.821933 1.0522849 115.856135 15.1813085 113.803067 21.5 101 27.8186915 113.803067 41.9477151 115.856135 31.7238576 125.821933 34.1373829 139.893865"></polygon>
+                                </g>
+                                <g class="Group-2" transform="translate(881.000000, 50.000000)">
+                                    <path d="M13.5,0 L13.5,100.5" class="Line" stroke-linecap="square"></path>
+                                    <polygon class="Star" points="13.5 133.25 5.56489909 139.893865 7.08036852 125.821933 0.66073703 115.856135 9.53244955 113.803067 13.5 101 17.4675505 113.803067 26.339263 115.856135 19.9196315 125.821933 21.4351009 139.893865"></polygon>
+                                </g>
+                
+                                <!-- ////////////////////////// -->
+                                <g class="Group-2" transform="translate(220.000000, 32.000000)">
+                                    <path d="M13.75,0 L13.75,78.6167341" class="Line-2" stroke-linecap="square"></path>
+                                    <circle class="Oval" cx="13.5" cy="91.5" r="13.5"></circle>
+                                </g>
+                                <g class="Group-2" transform="translate(613.000000, 23.000000)">
+                                    <path d="M13.75,0 L13.75,78.6167341" class="Line-2" stroke-linecap="square"></path>
+                                    <circle class="Oval" cx="13.5" cy="91.5" r="13.5"></circle>
+                                </g>
+                                <g class="Group-2" transform="translate(774.000000, 46.000000)">
+                                    <path d="M17.75,0 L17.75,99.5148532" class="Line-2" stroke-linecap="square"></path>
+                                    <circle class="Oval" cx="17" cy="116" r="17"></circle>
+                                </g>
+                                <g class="Group-2" transform="translate(0.000000, 57.000000)">
+                                    <path d="M17.75,0 L17.75,99.5148532" class="Line-2" stroke-linecap="square"></path>
+                                    <circle class="Oval" cx="17" cy="116" r="17"></circle>
+                                </g>
+                                <g class="Group-2" transform="translate(397.000000, 52.000000)">
+                                    <path d="M13.75,0.5 L13.75,119.514853" class="Line-2" stroke-linecap="square"></path>
+                                    <ellipse class="Oval" cx="13.5" cy="136" rx="13.5" ry="17"></ellipse>
+                                </g>
+                                <g class="Group-2" transform="translate(147.000000, 47.000000)">
+                                    <path d="M17,135.5 L8.5,161 L3.55271368e-15,135.5 L8.5,110 L17,135.5 Z" class="Combined-Shape"></path>
+                                    <path d="M8.5,0 L8.5,110.461487" class="Line-3" stroke-linecap="square"></path>
+                                </g>
+                                <g class="Group-2" transform="translate(558.000000, 44.000000)">
+                                    <path d="M17,135.5 L8.5,161 L3.55271368e-15,135.5 L8.5,110 L17,135.5 Z" class="Combined-Shape"></path>
+                                    <path d="M8.5,0 L8.5,110.461487" class="Line-3" stroke-linecap="square"></path>
+                                </g>
+                                <g class="Group-2" transform="translate(956.000000, 32.000000)">
+                                    <path d="M14,112 L7,133 L0,112 L7,91 L14,112 Z" class="Combined-Shape"></path>
+                                    <path d="M7.5,0 L7.5,91.553665" class="Line-3" stroke-linecap="square"></path>
+                                </g>
+                                <g class="Group-2" transform="translate(837.000000, 49.000000)">
+                                    <path d="M15,153 L7.5,176 L1.77635684e-15,153 L7.5,130 L15,153 Z" class="Combined-Shape"></path>
+                                    <path d="M7.5,0.5 L7.5,130.514853" class="Line-3" stroke-linecap="square"></path>
+                                </g>
+                                <g class="Group-2" transform="translate(734.000000, 48.000000)">
+                                    <path d="M11,112 L5.5,129 L0,112 L5.5,95 L11,112 Z" class="Combined-Shape"></path>
+                                    <path d="M5.5,0.366412214 L5.5,95.6444726" class="Line-3" stroke-linecap="square"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <svg width="972px" height="200px" viewBox="0 0 972 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g class="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g class="iPad-Pro" transform="translate(-26.000000, 0.000000)" stroke="#FFDB5E" fill="#FFDB5E">
+                            <g class="Group-12" transform="translate(27.000000, -57.000000)">
+                                <g class="Group-2" transform="translate(82.000000, 57.000000)">
+                                    <path d="M16.5,0 L16.5,78.6089109" class="Line" stroke-linecap="square"></path>
+                                    <polygon class="Star" points="16.5 103.75 6.80154334 108.84878 8.65378374 98.0493902 0.807567481 90.4012196 11.6507717 88.8256098 16.5 79 21.3492283 88.8256098 32.1924325 90.4012196 24.3462163 98.0493902 26.1984567 108.84878"></polygon>
+                                </g>
+                                <g class="Group-2" transform="translate(273.000000, 32.000000)">
+                                    <path d="M14.5,0 L14.5,100.5" class="Line" stroke-linecap="square"></path>
+                                    <polygon class="Star" points="14.5 133.25 5.97711384 139.893865 7.60484026 125.821933 0.709680514 115.856135 10.2385569 113.803067 14.5 101 18.7614431 113.803067 28.2903195 115.856135 21.3951597 125.821933 23.0228862 139.893865"></polygon>
+                                </g>
+                                <g class="Group-2" transform="translate(467.000000, 46.000000)">
+                                    <path d="M18.5,0.5 L18.5,104.574257" class="Line" stroke-linecap="square"></path>
+                                    <polygon class="Star" points="18 132 7.41986546 137.562306 9.44049135 125.781153 0.880982707 117.437694 12.7099327 115.718847 18 105 23.2900673 115.718847 35.1190173 117.437694 26.5595086 125.781153 28.5801345 137.562306"></polygon>
+                                </g>
+                                <g class="Group-2" transform="translate(662.000000, 0.000000)">
+                                    <path d="M21.5,0 L21.5,100.5" class="Line" stroke-linecap="square"></path>
+                                    <polygon class="Star" points="21.5 133.25 8.86261708 139.893865 11.2761424 125.821933 1.0522849 115.856135 15.1813085 113.803067 21.5 101 27.8186915 113.803067 41.9477151 115.856135 31.7238576 125.821933 34.1373829 139.893865"></polygon>
+                                </g>
+                                <g class="Group-2" transform="translate(881.000000, 50.000000)">
+                                    <path d="M13.5,0 L13.5,100.5" class="Line" stroke-linecap="square"></path>
+                                    <polygon class="Star" points="13.5 133.25 5.56489909 139.893865 7.08036852 125.821933 0.66073703 115.856135 9.53244955 113.803067 13.5 101 17.4675505 113.803067 26.339263 115.856135 19.9196315 125.821933 21.4351009 139.893865"></polygon>
+                                </g>
+                                <g class="Group-2" transform="translate(198.000000, 32.000000)">
+                                    <path d="M13.75,0 L13.75,78.6167341" class="Line-2" stroke-linecap="square"></path>
+                                    <circle class="Oval" cx="13.5" cy="91.5" r="13.5"></circle>
+                                </g>
+                                <g class="Group-2" transform="translate(613.000000, 23.000000)">
+                                    <path d="M13.75,0 L13.75,78.6167341" class="Line-2" stroke-linecap="square"></path>
+                                    <circle class="Oval" cx="13.5" cy="91.5" r="13.5"></circle>
+                                </g>
+                                <g class="Group-2" transform="translate(774.000000, 46.000000)">
+                                    <path d="M17.75,0 L17.75,99.5148532" class="Line-2" stroke-linecap="square"></path>
+                                    <circle class="Oval" cx="17" cy="116" r="17"></circle>
+                                </g>
+                                <g class="Group-2" transform="translate(0.000000, 57.000000)">
+                                    <path d="M17.75,0 L17.75,99.5148532" class="Line-2" stroke-linecap="square"></path>
+                                    <circle class="Oval" cx="17" cy="116" r="17"></circle>
+                                </g>
+                                <g class="Group-2" transform="translate(397.000000, 52.000000)">
+                                    <path d="M13.75,0.5 L13.75,119.514853" class="Line-2" stroke-linecap="square"></path>
+                                    <ellipse class="Oval" cx="13.5" cy="136" rx="13.5" ry="17"></ellipse>
+                                </g>
+                                <g class="Group-2" transform="translate(147.000000, 47.000000)">
+                                    <path d="M17,135.5 L8.5,161 L3.55271368e-15,135.5 L8.5,110 L17,135.5 Z" class="Combined-Shape"></path>
+                                    <path d="M8.5,0 L8.5,110.461487" class="Line-3" stroke-linecap="square"></path>
+                                </g>
+                                <g class="Group-2" transform="translate(558.000000, 44.000000)">
+                                    <path d="M17,135.5 L8.5,161 L3.55271368e-15,135.5 L8.5,110 L17,135.5 Z" class="Combined-Shape"></path>
+                                    <path d="M8.5,0 L8.5,110.461487" class="Line-3" stroke-linecap="square"></path>
+                                </g>
+                                <g class="Group-2" transform="translate(956.000000, 32.000000)">
+                                    <path d="M14,112 L7,133 L0,112 L7,91 L14,112 Z" class="Combined-Shape"></path>
+                                    <path d="M7.5,0 L7.5,91.553665" class="Line-3" stroke-linecap="square"></path>
+                                </g>
+                                <g class="Group-2" transform="translate(837.000000, 49.000000)">
+                                    <path d="M15,153 L7.5,176 L1.77635684e-15,153 L7.5,130 L15,153 Z" class="Combined-Shape"></path>
+                                    <path d="M7.5,0.5 L7.5,130.514853" class="Line-3" stroke-linecap="square"></path>
+                                </g>
+                                <g class="Group-2" transform="translate(734.000000, 48.000000)">
+                                    <path d="M11,112 L5.5,129 L0,112 L5.5,95 L11,112 Z" class="Combined-Shape"></path>
+                                    <path d="M5.5,0.366412214 L5.5,95.6444726" class="Line-3" stroke-linecap="square"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <svg width="972px" height="200px" viewBox="0 0 972 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g class="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g class="iPad-Pro" transform="translate(-26.000000, 0.000000)" stroke="#FFDB5E" fill="#FFDB5E">
+                            <g class="Group-12" transform="translate(27.000000, -57.000000)">
+                                <g class="Group-2" transform="translate(82.000000, 57.000000)">
+                                    <path d="M16.5,0 L16.5,78.6089109" class="Line" stroke-linecap="square"></path>
+                                    <polygon class="Star" points="16.5 103.75 6.80154334 108.84878 8.65378374 98.0493902 0.807567481 90.4012196 11.6507717 88.8256098 16.5 79 21.3492283 88.8256098 32.1924325 90.4012196 24.3462163 98.0493902 26.1984567 108.84878"></polygon>
+                                </g>
+                                <g class="Group-2" transform="translate(273.000000, 32.000000)">
+                                    <path d="M14.5,0 L14.5,100.5" class="Line" stroke-linecap="square"></path>
+                                    <polygon class="Star" points="14.5 133.25 5.97711384 139.893865 7.60484026 125.821933 0.709680514 115.856135 10.2385569 113.803067 14.5 101 18.7614431 113.803067 28.2903195 115.856135 21.3951597 125.821933 23.0228862 139.893865"></polygon>
+                                </g>
+                                <g class="Group-2" transform="translate(467.000000, 46.000000)">
+                                    <path d="M18.5,0.5 L18.5,104.574257" class="Line" stroke-linecap="square"></path>
+                                    <polygon class="Star" points="18 132 7.41986546 137.562306 9.44049135 125.781153 0.880982707 117.437694 12.7099327 115.718847 18 105 23.2900673 115.718847 35.1190173 117.437694 26.5595086 125.781153 28.5801345 137.562306"></polygon>
+                                </g>
+                                <g class="Group-2" transform="translate(662.000000, 0.000000)">
+                                    <path d="M21.5,0 L21.5,100.5" class="Line" stroke-linecap="square"></path>
+                                    <polygon class="Star" points="21.5 133.25 8.86261708 139.893865 11.2761424 125.821933 1.0522849 115.856135 15.1813085 113.803067 21.5 101 27.8186915 113.803067 41.9477151 115.856135 31.7238576 125.821933 34.1373829 139.893865"></polygon>
+                                </g>
+                                <g class="Group-2" transform="translate(881.000000, 50.000000)">
+                                    <path d="M13.5,0 L13.5,100.5" class="Line" stroke-linecap="square"></path>
+                                    <polygon class="Star" points="13.5 133.25 5.56489909 139.893865 7.08036852 125.821933 0.66073703 115.856135 9.53244955 113.803067 13.5 101 17.4675505 113.803067 26.339263 115.856135 19.9196315 125.821933 21.4351009 139.893865"></polygon>
+                                </g>
+                                <g class="Group-2" transform="translate(198.000000, 32.000000)">
+                                    <path d="M13.75,0 L13.75,78.6167341" class="Line-2" stroke-linecap="square"></path>
+                                    <circle class="Oval" cx="13.5" cy="91.5" r="13.5"></circle>
+                                </g>
+                                <g class="Group-2" transform="translate(613.000000, 23.000000)">
+                                    <path d="M13.75,0 L13.75,78.6167341" class="Line-2" stroke-linecap="square"></path>
+                                    <circle class="Oval" cx="13.5" cy="91.5" r="13.5"></circle>
+                                </g>
+                                <g class="Group-2" transform="translate(774.000000, 46.000000)">
+                                    <path d="M17.75,0 L17.75,99.5148532" class="Line-2" stroke-linecap="square"></path>
+                                    <circle class="Oval" cx="17" cy="116" r="17"></circle>
+                                </g>
+                                <g class="Group-2" transform="translate(0.000000, 57.000000)">
+                                    <path d="M17.75,0 L17.75,99.5148532" class="Line-2" stroke-linecap="square"></path>
+                                    <circle class="Oval" cx="17" cy="116" r="17"></circle>
+                                </g>
+                                <g class="Group-2" transform="translate(397.000000, 52.000000)">
+                                    <path d="M13.75,0.5 L13.75,119.514853" class="Line-2" stroke-linecap="square"></path>
+                                    <ellipse class="Oval" cx="13.5" cy="136" rx="13.5" ry="17"></ellipse>
+                                </g>
+                                <g class="Group-2" transform="translate(147.000000, 47.000000)">
+                                    <path d="M17,135.5 L8.5,161 L3.55271368e-15,135.5 L8.5,110 L17,135.5 Z" class="Combined-Shape"></path>
+                                    <path d="M8.5,0 L8.5,110.461487" class="Line-3" stroke-linecap="square"></path>
+                                </g>
+                                <g class="Group-2" transform="translate(558.000000, 44.000000)">
+                                    <path d="M17,135.5 L8.5,161 L3.55271368e-15,135.5 L8.5,110 L17,135.5 Z" class="Combined-Shape"></path>
+                                    <path d="M8.5,0 L8.5,110.461487" class="Line-3" stroke-linecap="square"></path>
+                                </g>
+                                <g class="Group-2" transform="translate(956.000000, 32.000000)">
+                                    <path d="M14,112 L7,133 L0,112 L7,91 L14,112 Z" class="Combined-Shape"></path>
+                                    <path d="M7.5,0 L7.5,91.553665" class="Line-3" stroke-linecap="square"></path>
+                                </g>
+                                <g class="Group-2" transform="translate(837.000000, 49.000000)">
+                                    <path d="M15,153 L7.5,176 L1.77635684e-15,153 L7.5,130 L15,153 Z" class="Combined-Shape"></path>
+                                    <path d="M7.5,0.5 L7.5,130.514853" class="Line-3" stroke-linecap="square"></path>
+                                </g>
+                                <g class="Group-2" transform="translate(734.000000, 48.000000)">
+                                    <path d="M11,112 L5.5,129 L0,112 L5.5,95 L11,112 Z" class="Combined-Shape"></path>
+                                    <path d="M5.5,0.366412214 L5.5,95.6444726" class="Line-3" stroke-linecap="square"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                    </div>
+                
+                                    <div id="trees" class="trees fade">
+                <svg width="961px" height="300px" viewBox="0 0 961 261" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g class="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g class="iPad-Pro" transform="translate(-25.000000, -490.000000)" stroke="#FFDB5E" fill="#FFDB5E">
+                            <g class="Group-13" transform="translate(24.000000, 507.000000)">
+                                <g class="tree" transform="translate(85.000000, 61.000000)">
+                                    <polygon class="Triangle" points="51.5 0 103 164 0 164"></polygon>
+                                    <rect class="Rectangle" x="42.5" y="164" width="18" height="37"></rect>
+                                </g>
+                                <g class="tree" transform="translate(794.000000, 130.000000)">
+                                    <polygon class="Triangle" points="34 0 68 108 0 108"></polygon>
+                                    <rect class="Rectangle" x="26.5" y="108" width="16" height="24"></rect>
+                                </g>
+                                <g class="tree" transform="translate(219.000000, 171.000000)">
+                                    <polygon class="Triangle" points="23 0 46 74 0 74"></polygon>
+                                    <rect class="Rectangle" x="17.5" y="74" width="11" height="21"></rect>
+                                </g>
+                                <g class="tree" transform="translate(616.000000, 68.000000)">
+                                    <rect class="Rectangle" x="63.5" y="170.5" width="16" height="24"></rect>
+                                    <path d="M57.301086,67.6015625 L30,67.6015625 C49.9025632,53.7837246 71,17.4213412 71,4.97379915e-14 C71,17.4157673 91.9498771,53.7837246 112,67.6015625 L85.6347269,67.6015625 C96.5997973,87.6313272 112.495122,107.98 128,118.601562 L95.6274738,118.601562 C108.752689,139.558825 125.55119,159.407441 142,170.601562 C72.2868087,170.601562 71,170.601562 -1.56319402e-13,170.601562 C16.3286314,159.40684 33.1217021,139.558832 46.274068,118.601562 L15,118.601562 C30.3915799,107.979441 46.3017279,87.6315879 57.301086,67.6015625 Z" class="Combined-Shape"></path>
+                                </g>
+                                <g class="tree" transform="translate(294.000000, 153.000000)">
+                                    <rect class="Rectangle" x="35.5" y="96" width="9" height="13"></rect>
+                                    <path d="M33.2263644,36 L18,36 C28.6794242,28.6415582 40,9.27742289 40,0 C40,9.27445459 51.2413975,28.6415582 62,36 L46.7414869,36 C52.9523495,47.9796662 62.6027916,60.6173298 72,67 L54.024543,67 C61.3967809,78.6957424 70.7955706,89.7482671 80,96 C40.7249626,96 40,96 0,96 C9.1371799,89.7479312 18.5324979,78.6957417 25.9196807,67 L8,67 C17.3285303,60.6170007 26.9933895,47.9799093 33.2263644,36 Z" class="Combined-Shape"></path>
+                                </g>
+                                <g class="tree" transform="translate(399.000000, 177.000000)">
+                                    <rect class="Rectangle" x="27.5" y="74" width="7" height="13"></rect>
+                                    <path d="M25.2542166,29 L13,29 C21.7377107,23.0723663 31,7.47347955 31,0 C31,7.47108842 40.197507,23.0723663 49,29 L36.7191103,29 C41.5796711,37.9586759 48.8828011,47.2403034 56,52 L42.065161,52 C47.7486714,60.8825238 54.9479418,69.2458336 62,74 C31.561846,74 31,74 0,74 C7.00053435,69.2455782 14.1965875,60.8825174 19.8912215,52 L6,52 C13.0651879,47.2400553 20.377318,37.9588259 25.2542166,29 Z" class="Combined-Shape"></path>
+                                </g>
+                                <g class="tree" transform="translate(2.000000, 137.000000)" stroke-linecap="square">
+                                    <path d="M26,0.30078125 L26,123" class="Line-4"></path>
+                                    <path d="M26,0.30078125 L52,40.8007812" class="Line-5"></path>
+                                    <path d="M26,29.3007812 L52,69.8007812" class="Line-5"></path>
+                                    <path d="M26,59.4023438 L52,99.9023437" class="Line-5"></path>
+                                    <path d="M0,0.30078125 L26,40.8007812" class="Line-5" transform="translate(13.000000, 20.500000) scale(-1, 1) translate(-13.000000, -20.500000) "></path>
+                                    <path d="M0,29.3007812 L26,69.8007812" class="Line-5" transform="translate(13.000000, 49.500000) scale(-1, 1) translate(-13.000000, -49.500000) "></path>
+                                    <path d="M0,59.4023438 L26,99.9023437" class="Line-5" transform="translate(13.000000, 79.601562) scale(-1, 1) translate(-13.000000, -79.601562) "></path>
+                                </g>
+                                <g class="tree" transform="translate(506.000000, 137.000000)" stroke-linecap="square">
+                                    <path d="M26,0.30078125 L26,123" class="Line-4"></path>
+                                    <path d="M26,0.30078125 L52,40.8007812" class="Line-5"></path>
+                                    <path d="M26,29.3007812 L52,69.8007812" class="Line-5"></path>
+                                    <path d="M26,59.4023438 L52,99.9023437" class="Line-5"></path>
+                                    <path d="M0,0.30078125 L26,40.8007812" class="Line-5" transform="translate(13.000000, 20.500000) scale(-1, 1) translate(-13.000000, -20.500000) "></path>
+                                    <path d="M0,29.3007812 L26,69.8007812" class="Line-5" transform="translate(13.000000, 49.500000) scale(-1, 1) translate(-13.000000, -49.500000) "></path>
+                                    <path d="M0,59.4023438 L26,99.9023437" class="Line-5" transform="translate(13.000000, 79.601562) scale(-1, 1) translate(-13.000000, -79.601562) "></path>
+                                </g>
+                                <g class="tree" transform="translate(920.000000, 164.000000)" stroke-linecap="square">
+                                    <path d="M21,0.235288558 L21,96.2177419" class="Line-4"></path>
+                                    <path d="M20,0.234756098 L41,31.8445122" class="Line-5"></path>
+                                    <path d="M20,23.2347561 L41,54.8445122" class="Line-5"></path>
+                                    <path d="M20,46.2347561 L41,77.8445122" class="Line-5"></path>
+                                    <path d="M0,0.234756098 L21,31.8445122" class="Line-5" transform="translate(10.500000, 16.000000) scale(-1, 1) translate(-10.500000, -16.000000) "></path>
+                                    <path d="M0,23.2347561 L21,54.8445122" class="Line-5" transform="translate(10.500000, 39.000000) scale(-1, 1) translate(-10.500000, -39.000000) "></path>
+                                    <path d="M0,46.2347561 L21,77.8445122" class="Line-5" transform="translate(10.500000, 62.000000) scale(-1, 1) translate(-10.500000, -62.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(364.000000, 91.000000)" stroke-linecap="round">
+                                    <path d="M21.8701351,0.221649485 L21.0416667,42.7783505 L21.8701351,0.221649485 Z M16.4583333,2.43814433 L21.4118018,8.86597938 L16.4583333,2.43814433 Z M27,2.43814433 L22.0465316,8.86597938 L27,2.43814433 Z M16,40.5618557 L20.9534684,34.1340206 L16,40.5618557 Z M26.5416667,40.5618557 L21.5881982,34.1340206 L26.5416667,40.5618557 Z" class="Combined-Shape"></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-60.000000) translate(-21.500000, -21.500000) "></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-300.000000) translate(-21.500000, -21.500000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(880.000000, 102.000000)" stroke-linecap="square">
+                                    <path d="M9,0.243902439 L9,19.7560976" class="Line-6"></path>
+                                    <path d="M9.01170305,0.0202702703 L8.98829695,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(-60.000000) translate(-9.000000, -10.000000) "></path>
+                                    <path d="M8.98829695,0.0202702703 L9.01170305,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(60.000000) translate(-9.000000, -10.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(267.000000, 92.000000)" stroke-linecap="square">
+                                    <path d="M9,0.243902439 L9,19.7560976" class="Line-6"></path>
+                                    <path d="M9.01170305,0.0202702703 L8.98829695,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(-60.000000) translate(-9.000000, -10.000000) "></path>
+                                    <path d="M8.98829695,0.0202702703 L9.01170305,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(60.000000) translate(-9.000000, -10.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(461.000000, 137.000000)" stroke-linecap="square">
+                                    <path d="M9,0.243902439 L9,19.7560976" class="Line-6"></path>
+                                    <path d="M9.01170305,0.0202702703 L8.98829695,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(-60.000000) translate(-9.000000, -10.000000) "></path>
+                                    <path d="M8.98829695,0.0202702703 L9.01170305,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(60.000000) translate(-9.000000, -10.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(66.000000, 72.000000)" stroke-linecap="square">
+                                    <path d="M9,0.243902439 L9,19.7560976" class="Line-6"></path>
+                                    <path d="M9.01170305,0.0202702703 L8.98829695,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(-60.000000) translate(-9.000000, -10.000000) "></path>
+                                    <path d="M8.98829695,0.0202702703 L9.01170305,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(60.000000) translate(-9.000000, -10.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(777.000000, 33.000000)" stroke-linecap="square">
+                                    <path d="M9,0.243902439 L9,19.7560976" class="Line-6"></path>
+                                    <path d="M9.01170305,0.0202702703 L8.98829695,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(-60.000000) translate(-9.000000, -10.000000) "></path>
+                                    <path d="M8.98829695,0.0202702703 L9.01170305,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(60.000000) translate(-9.000000, -10.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(334.000000, 32.000000)" stroke-linecap="square">
+                                    <path d="M9,0.243902439 L9,19.7560976" class="Line-6"></path>
+                                    <path d="M9.01170305,0.0202702703 L8.98829695,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(-60.000000) translate(-9.000000, -10.000000) "></path>
+                                    <path d="M8.98829695,0.0202702703 L9.01170305,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(60.000000) translate(-9.000000, -10.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(188.000000, 18.000000)" stroke-linecap="round">
+                                    <path d="M21.8701351,0.221649485 L21.0416667,42.7783505 L21.8701351,0.221649485 Z M16.4583333,2.43814433 L21.4118018,8.86597938 L16.4583333,2.43814433 Z M27,2.43814433 L22.0465316,8.86597938 L27,2.43814433 Z M16,40.5618557 L20.9534684,34.1340206 L16,40.5618557 Z M26.5416667,40.5618557 L21.5881982,34.1340206 L26.5416667,40.5618557 Z" class="Combined-Shape"></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-60.000000) translate(-21.500000, -21.500000) "></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-300.000000) translate(-21.500000, -21.500000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(582.000000, 71.500000)" stroke-linecap="round">
+                                    <path d="M21.8701351,0.221649485 L21.0416667,42.7783505 L21.8701351,0.221649485 Z M16.4583333,2.43814433 L21.4118018,8.86597938 L16.4583333,2.43814433 Z M27,2.43814433 L22.0465316,8.86597938 L27,2.43814433 Z M16,40.5618557 L20.9534684,34.1340206 L16,40.5618557 Z M26.5416667,40.5618557 L21.5881982,34.1340206 L26.5416667,40.5618557 Z" class="Combined-Shape"></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-60.000000) translate(-21.500000, -21.500000) "></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-300.000000) translate(-21.500000, -21.500000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(0.000000, 43.000000)" stroke-linecap="round">
+                                    <path d="M21.8701351,0.221649485 L21.0416667,42.7783505 L21.8701351,0.221649485 Z M16.4583333,2.43814433 L21.4118018,8.86597938 L16.4583333,2.43814433 Z M27,2.43814433 L22.0465316,8.86597938 L27,2.43814433 Z M16,40.5618557 L20.9534684,34.1340206 L16,40.5618557 Z M26.5416667,40.5618557 L21.5881982,34.1340206 L26.5416667,40.5618557 Z" class="Combined-Shape"></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-60.000000) translate(-21.500000, -21.500000) "></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-300.000000) translate(-21.500000, -21.500000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(916.000000, 0.000000)" stroke-linecap="round">
+                                    <path d="M21.8701351,0.221649485 L21.0416667,42.7783505 L21.8701351,0.221649485 Z M16.4583333,2.43814433 L21.4118018,8.86597938 L16.4583333,2.43814433 Z M27,2.43814433 L22.0465316,8.86597938 L27,2.43814433 Z M16,40.5618557 L20.9534684,34.1340206 L16,40.5618557 Z M26.5416667,40.5618557 L21.5881982,34.1340206 L26.5416667,40.5618557 Z" class="Combined-Shape"></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-60.000000) translate(-21.500000, -21.500000) "></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-300.000000) translate(-21.500000, -21.500000) "></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <svg width="961px" height="300px" viewBox="0 0 961 261" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g class="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g class="iPad-Pro" transform="translate(-25.000000, -490.000000)" stroke="#FFDB5E" fill="#FFDB5E">
+                            <g class="Group-13" transform="translate(24.000000, 507.000000)">
+                                <g class="tree" transform="translate(85.000000, 61.000000)">
+                                    <polygon class="Triangle" points="51.5 0 103 164 0 164"></polygon>
+                                    <rect class="Rectangle" x="42.5" y="164" width="18" height="37"></rect>
+                                </g>
+                                <g class="tree" transform="translate(794.000000, 130.000000)">
+                                    <polygon class="Triangle" points="34 0 68 108 0 108"></polygon>
+                                    <rect class="Rectangle" x="26.5" y="108" width="16" height="24"></rect>
+                                </g>
+                                <g class="tree" transform="translate(219.000000, 171.000000)">
+                                    <polygon class="Triangle" points="23 0 46 74 0 74"></polygon>
+                                    <rect class="Rectangle" x="17.5" y="74" width="11" height="21"></rect>
+                                </g>
+                                <g class="tree" transform="translate(616.000000, 68.000000)">
+                                    <rect class="Rectangle" x="63.5" y="170.5" width="16" height="24"></rect>
+                                    <path d="M57.301086,67.6015625 L30,67.6015625 C49.9025632,53.7837246 71,17.4213412 71,4.97379915e-14 C71,17.4157673 91.9498771,53.7837246 112,67.6015625 L85.6347269,67.6015625 C96.5997973,87.6313272 112.495122,107.98 128,118.601562 L95.6274738,118.601562 C108.752689,139.558825 125.55119,159.407441 142,170.601562 C72.2868087,170.601562 71,170.601562 -1.56319402e-13,170.601562 C16.3286314,159.40684 33.1217021,139.558832 46.274068,118.601562 L15,118.601562 C30.3915799,107.979441 46.3017279,87.6315879 57.301086,67.6015625 Z" class="Combined-Shape"></path>
+                                </g>
+                                <g class="tree" transform="translate(294.000000, 153.000000)">
+                                    <rect class="Rectangle" x="35.5" y="96" width="9" height="13"></rect>
+                                    <path d="M33.2263644,36 L18,36 C28.6794242,28.6415582 40,9.27742289 40,0 C40,9.27445459 51.2413975,28.6415582 62,36 L46.7414869,36 C52.9523495,47.9796662 62.6027916,60.6173298 72,67 L54.024543,67 C61.3967809,78.6957424 70.7955706,89.7482671 80,96 C40.7249626,96 40,96 0,96 C9.1371799,89.7479312 18.5324979,78.6957417 25.9196807,67 L8,67 C17.3285303,60.6170007 26.9933895,47.9799093 33.2263644,36 Z" class="Combined-Shape"></path>
+                                </g>
+                                <g class="tree" transform="translate(399.000000, 177.000000)">
+                                    <rect class="Rectangle" x="27.5" y="74" width="7" height="13"></rect>
+                                    <path d="M25.2542166,29 L13,29 C21.7377107,23.0723663 31,7.47347955 31,0 C31,7.47108842 40.197507,23.0723663 49,29 L36.7191103,29 C41.5796711,37.9586759 48.8828011,47.2403034 56,52 L42.065161,52 C47.7486714,60.8825238 54.9479418,69.2458336 62,74 C31.561846,74 31,74 0,74 C7.00053435,69.2455782 14.1965875,60.8825174 19.8912215,52 L6,52 C13.0651879,47.2400553 20.377318,37.9588259 25.2542166,29 Z" class="Combined-Shape"></path>
+                                </g>
+                                <g class="tree" transform="translate(2.000000, 137.000000)" stroke-linecap="square">
+                                    <path d="M26,0.30078125 L26,123" class="Line-4"></path>
+                                    <path d="M26,0.30078125 L52,40.8007812" class="Line-5"></path>
+                                    <path d="M26,29.3007812 L52,69.8007812" class="Line-5"></path>
+                                    <path d="M26,59.4023438 L52,99.9023437" class="Line-5"></path>
+                                    <path d="M0,0.30078125 L26,40.8007812" class="Line-5" transform="translate(13.000000, 20.500000) scale(-1, 1) translate(-13.000000, -20.500000) "></path>
+                                    <path d="M0,29.3007812 L26,69.8007812" class="Line-5" transform="translate(13.000000, 49.500000) scale(-1, 1) translate(-13.000000, -49.500000) "></path>
+                                    <path d="M0,59.4023438 L26,99.9023437" class="Line-5" transform="translate(13.000000, 79.601562) scale(-1, 1) translate(-13.000000, -79.601562) "></path>
+                                </g>
+                                <g class="tree" transform="translate(506.000000, 137.000000)" stroke-linecap="square">
+                                    <path d="M26,0.30078125 L26,123" class="Line-4"></path>
+                                    <path d="M26,0.30078125 L52,40.8007812" class="Line-5"></path>
+                                    <path d="M26,29.3007812 L52,69.8007812" class="Line-5"></path>
+                                    <path d="M26,59.4023438 L52,99.9023437" class="Line-5"></path>
+                                    <path d="M0,0.30078125 L26,40.8007812" class="Line-5" transform="translate(13.000000, 20.500000) scale(-1, 1) translate(-13.000000, -20.500000) "></path>
+                                    <path d="M0,29.3007812 L26,69.8007812" class="Line-5" transform="translate(13.000000, 49.500000) scale(-1, 1) translate(-13.000000, -49.500000) "></path>
+                                    <path d="M0,59.4023438 L26,99.9023437" class="Line-5" transform="translate(13.000000, 79.601562) scale(-1, 1) translate(-13.000000, -79.601562) "></path>
+                                </g>
+                                <g class="tree" transform="translate(920.000000, 164.000000)" stroke-linecap="square">
+                                    <path d="M21,0.235288558 L21,96.2177419" class="Line-4"></path>
+                                    <path d="M20,0.234756098 L41,31.8445122" class="Line-5"></path>
+                                    <path d="M20,23.2347561 L41,54.8445122" class="Line-5"></path>
+                                    <path d="M20,46.2347561 L41,77.8445122" class="Line-5"></path>
+                                    <path d="M0,0.234756098 L21,31.8445122" class="Line-5" transform="translate(10.500000, 16.000000) scale(-1, 1) translate(-10.500000, -16.000000) "></path>
+                                    <path d="M0,23.2347561 L21,54.8445122" class="Line-5" transform="translate(10.500000, 39.000000) scale(-1, 1) translate(-10.500000, -39.000000) "></path>
+                                    <path d="M0,46.2347561 L21,77.8445122" class="Line-5" transform="translate(10.500000, 62.000000) scale(-1, 1) translate(-10.500000, -62.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(364.000000, 91.000000)" stroke-linecap="round">
+                                    <path d="M21.8701351,0.221649485 L21.0416667,42.7783505 L21.8701351,0.221649485 Z M16.4583333,2.43814433 L21.4118018,8.86597938 L16.4583333,2.43814433 Z M27,2.43814433 L22.0465316,8.86597938 L27,2.43814433 Z M16,40.5618557 L20.9534684,34.1340206 L16,40.5618557 Z M26.5416667,40.5618557 L21.5881982,34.1340206 L26.5416667,40.5618557 Z" class="Combined-Shape"></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-60.000000) translate(-21.500000, -21.500000) "></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-300.000000) translate(-21.500000, -21.500000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(880.000000, 102.000000)" stroke-linecap="square">
+                                    <path d="M9,0.243902439 L9,19.7560976" class="Line-6"></path>
+                                    <path d="M9.01170305,0.0202702703 L8.98829695,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(-60.000000) translate(-9.000000, -10.000000) "></path>
+                                    <path d="M8.98829695,0.0202702703 L9.01170305,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(60.000000) translate(-9.000000, -10.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(267.000000, 92.000000)" stroke-linecap="square">
+                                    <path d="M9,0.243902439 L9,19.7560976" class="Line-6"></path>
+                                    <path d="M9.01170305,0.0202702703 L8.98829695,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(-60.000000) translate(-9.000000, -10.000000) "></path>
+                                    <path d="M8.98829695,0.0202702703 L9.01170305,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(60.000000) translate(-9.000000, -10.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(461.000000, 137.000000)" stroke-linecap="square">
+                                    <path d="M9,0.243902439 L9,19.7560976" class="Line-6"></path>
+                                    <path d="M9.01170305,0.0202702703 L8.98829695,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(-60.000000) translate(-9.000000, -10.000000) "></path>
+                                    <path d="M8.98829695,0.0202702703 L9.01170305,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(60.000000) translate(-9.000000, -10.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(66.000000, 72.000000)" stroke-linecap="square">
+                                    <path d="M9,0.243902439 L9,19.7560976" class="Line-6"></path>
+                                    <path d="M9.01170305,0.0202702703 L8.98829695,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(-60.000000) translate(-9.000000, -10.000000) "></path>
+                                    <path d="M8.98829695,0.0202702703 L9.01170305,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(60.000000) translate(-9.000000, -10.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(777.000000, 33.000000)" stroke-linecap="square">
+                                    <path d="M9,0.243902439 L9,19.7560976" class="Line-6"></path>
+                                    <path d="M9.01170305,0.0202702703 L8.98829695,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(-60.000000) translate(-9.000000, -10.000000) "></path>
+                                    <path d="M8.98829695,0.0202702703 L9.01170305,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(60.000000) translate(-9.000000, -10.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(334.000000, 32.000000)" stroke-linecap="square">
+                                    <path d="M9,0.243902439 L9,19.7560976" class="Line-6"></path>
+                                    <path d="M9.01170305,0.0202702703 L8.98829695,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(-60.000000) translate(-9.000000, -10.000000) "></path>
+                                    <path d="M8.98829695,0.0202702703 L9.01170305,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(60.000000) translate(-9.000000, -10.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(188.000000, 18.000000)" stroke-linecap="round">
+                                    <path d="M21.8701351,0.221649485 L21.0416667,42.7783505 L21.8701351,0.221649485 Z M16.4583333,2.43814433 L21.4118018,8.86597938 L16.4583333,2.43814433 Z M27,2.43814433 L22.0465316,8.86597938 L27,2.43814433 Z M16,40.5618557 L20.9534684,34.1340206 L16,40.5618557 Z M26.5416667,40.5618557 L21.5881982,34.1340206 L26.5416667,40.5618557 Z" class="Combined-Shape"></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-60.000000) translate(-21.500000, -21.500000) "></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-300.000000) translate(-21.500000, -21.500000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(582.000000, 71.500000)" stroke-linecap="round">
+                                    <path d="M21.8701351,0.221649485 L21.0416667,42.7783505 L21.8701351,0.221649485 Z M16.4583333,2.43814433 L21.4118018,8.86597938 L16.4583333,2.43814433 Z M27,2.43814433 L22.0465316,8.86597938 L27,2.43814433 Z M16,40.5618557 L20.9534684,34.1340206 L16,40.5618557 Z M26.5416667,40.5618557 L21.5881982,34.1340206 L26.5416667,40.5618557 Z" class="Combined-Shape"></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-60.000000) translate(-21.500000, -21.500000) "></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-300.000000) translate(-21.500000, -21.500000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(0.000000, 43.000000)" stroke-linecap="round">
+                                    <path d="M21.8701351,0.221649485 L21.0416667,42.7783505 L21.8701351,0.221649485 Z M16.4583333,2.43814433 L21.4118018,8.86597938 L16.4583333,2.43814433 Z M27,2.43814433 L22.0465316,8.86597938 L27,2.43814433 Z M16,40.5618557 L20.9534684,34.1340206 L16,40.5618557 Z M26.5416667,40.5618557 L21.5881982,34.1340206 L26.5416667,40.5618557 Z" class="Combined-Shape"></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-60.000000) translate(-21.500000, -21.500000) "></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-300.000000) translate(-21.500000, -21.500000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(916.000000, 0.000000)" stroke-linecap="round">
+                                    <path d="M21.8701351,0.221649485 L21.0416667,42.7783505 L21.8701351,0.221649485 Z M16.4583333,2.43814433 L21.4118018,8.86597938 L16.4583333,2.43814433 Z M27,2.43814433 L22.0465316,8.86597938 L27,2.43814433 Z M16,40.5618557 L20.9534684,34.1340206 L16,40.5618557 Z M26.5416667,40.5618557 L21.5881982,34.1340206 L26.5416667,40.5618557 Z" class="Combined-Shape"></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-60.000000) translate(-21.500000, -21.500000) "></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-300.000000) translate(-21.500000, -21.500000) "></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <svg width="961px" height="300px" viewBox="0 0 961 261" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g class="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g class="iPad-Pro" transform="translate(-25.000000, -490.000000)" stroke="#FFDB5E" fill="#FFDB5E">
+                            <g class="Group-13" transform="translate(24.000000, 507.000000)">
+                                <g class="tree" transform="translate(85.000000, 61.000000)">
+                                    <polygon class="Triangle" points="51.5 0 103 164 0 164"></polygon>
+                                    <rect class="Rectangle" x="42.5" y="164" width="18" height="37"></rect>
+                                </g>
+                                <g class="tree" transform="translate(794.000000, 130.000000)">
+                                    <polygon class="Triangle" points="34 0 68 108 0 108"></polygon>
+                                    <rect class="Rectangle" x="26.5" y="108" width="16" height="24"></rect>
+                                </g>
+                                <g class="tree" transform="translate(219.000000, 171.000000)">
+                                    <polygon class="Triangle" points="23 0 46 74 0 74"></polygon>
+                                    <rect class="Rectangle" x="17.5" y="74" width="11" height="21"></rect>
+                                </g>
+                                <g class="tree" transform="translate(616.000000, 68.000000)">
+                                    <rect class="Rectangle" x="63.5" y="170.5" width="16" height="24"></rect>
+                                    <path d="M57.301086,67.6015625 L30,67.6015625 C49.9025632,53.7837246 71,17.4213412 71,4.97379915e-14 C71,17.4157673 91.9498771,53.7837246 112,67.6015625 L85.6347269,67.6015625 C96.5997973,87.6313272 112.495122,107.98 128,118.601562 L95.6274738,118.601562 C108.752689,139.558825 125.55119,159.407441 142,170.601562 C72.2868087,170.601562 71,170.601562 -1.56319402e-13,170.601562 C16.3286314,159.40684 33.1217021,139.558832 46.274068,118.601562 L15,118.601562 C30.3915799,107.979441 46.3017279,87.6315879 57.301086,67.6015625 Z" class="Combined-Shape"></path>
+                                </g>
+                                <g class="tree" transform="translate(294.000000, 153.000000)">
+                                    <rect class="Rectangle" x="35.5" y="96" width="9" height="13"></rect>
+                                    <path d="M33.2263644,36 L18,36 C28.6794242,28.6415582 40,9.27742289 40,0 C40,9.27445459 51.2413975,28.6415582 62,36 L46.7414869,36 C52.9523495,47.9796662 62.6027916,60.6173298 72,67 L54.024543,67 C61.3967809,78.6957424 70.7955706,89.7482671 80,96 C40.7249626,96 40,96 0,96 C9.1371799,89.7479312 18.5324979,78.6957417 25.9196807,67 L8,67 C17.3285303,60.6170007 26.9933895,47.9799093 33.2263644,36 Z" class="Combined-Shape"></path>
+                                </g>
+                                <g class="tree" transform="translate(399.000000, 177.000000)">
+                                    <rect class="Rectangle" x="27.5" y="74" width="7" height="13"></rect>
+                                    <path d="M25.2542166,29 L13,29 C21.7377107,23.0723663 31,7.47347955 31,0 C31,7.47108842 40.197507,23.0723663 49,29 L36.7191103,29 C41.5796711,37.9586759 48.8828011,47.2403034 56,52 L42.065161,52 C47.7486714,60.8825238 54.9479418,69.2458336 62,74 C31.561846,74 31,74 0,74 C7.00053435,69.2455782 14.1965875,60.8825174 19.8912215,52 L6,52 C13.0651879,47.2400553 20.377318,37.9588259 25.2542166,29 Z" class="Combined-Shape"></path>
+                                </g>
+                                <g class="tree" transform="translate(2.000000, 137.000000)" stroke-linecap="square">
+                                    <path d="M26,0.30078125 L26,123" class="Line-4"></path>
+                                    <path d="M26,0.30078125 L52,40.8007812" class="Line-5"></path>
+                                    <path d="M26,29.3007812 L52,69.8007812" class="Line-5"></path>
+                                    <path d="M26,59.4023438 L52,99.9023437" class="Line-5"></path>
+                                    <path d="M0,0.30078125 L26,40.8007812" class="Line-5" transform="translate(13.000000, 20.500000) scale(-1, 1) translate(-13.000000, -20.500000) "></path>
+                                    <path d="M0,29.3007812 L26,69.8007812" class="Line-5" transform="translate(13.000000, 49.500000) scale(-1, 1) translate(-13.000000, -49.500000) "></path>
+                                    <path d="M0,59.4023438 L26,99.9023437" class="Line-5" transform="translate(13.000000, 79.601562) scale(-1, 1) translate(-13.000000, -79.601562) "></path>
+                                </g>
+                                <g class="tree" transform="translate(506.000000, 137.000000)" stroke-linecap="square">
+                                    <path d="M26,0.30078125 L26,123" class="Line-4"></path>
+                                    <path d="M26,0.30078125 L52,40.8007812" class="Line-5"></path>
+                                    <path d="M26,29.3007812 L52,69.8007812" class="Line-5"></path>
+                                    <path d="M26,59.4023438 L52,99.9023437" class="Line-5"></path>
+                                    <path d="M0,0.30078125 L26,40.8007812" class="Line-5" transform="translate(13.000000, 20.500000) scale(-1, 1) translate(-13.000000, -20.500000) "></path>
+                                    <path d="M0,29.3007812 L26,69.8007812" class="Line-5" transform="translate(13.000000, 49.500000) scale(-1, 1) translate(-13.000000, -49.500000) "></path>
+                                    <path d="M0,59.4023438 L26,99.9023437" class="Line-5" transform="translate(13.000000, 79.601562) scale(-1, 1) translate(-13.000000, -79.601562) "></path>
+                                </g>
+                                <g class="tree" transform="translate(920.000000, 164.000000)" stroke-linecap="square">
+                                    <path d="M21,0.235288558 L21,96.2177419" class="Line-4"></path>
+                                    <path d="M20,0.234756098 L41,31.8445122" class="Line-5"></path>
+                                    <path d="M20,23.2347561 L41,54.8445122" class="Line-5"></path>
+                                    <path d="M20,46.2347561 L41,77.8445122" class="Line-5"></path>
+                                    <path d="M0,0.234756098 L21,31.8445122" class="Line-5" transform="translate(10.500000, 16.000000) scale(-1, 1) translate(-10.500000, -16.000000) "></path>
+                                    <path d="M0,23.2347561 L21,54.8445122" class="Line-5" transform="translate(10.500000, 39.000000) scale(-1, 1) translate(-10.500000, -39.000000) "></path>
+                                    <path d="M0,46.2347561 L21,77.8445122" class="Line-5" transform="translate(10.500000, 62.000000) scale(-1, 1) translate(-10.500000, -62.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(364.000000, 91.000000)" stroke-linecap="round">
+                                    <path d="M21.8701351,0.221649485 L21.0416667,42.7783505 L21.8701351,0.221649485 Z M16.4583333,2.43814433 L21.4118018,8.86597938 L16.4583333,2.43814433 Z M27,2.43814433 L22.0465316,8.86597938 L27,2.43814433 Z M16,40.5618557 L20.9534684,34.1340206 L16,40.5618557 Z M26.5416667,40.5618557 L21.5881982,34.1340206 L26.5416667,40.5618557 Z" class="Combined-Shape"></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-60.000000) translate(-21.500000, -21.500000) "></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-300.000000) translate(-21.500000, -21.500000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(880.000000, 102.000000)" stroke-linecap="square">
+                                    <path d="M9,0.243902439 L9,19.7560976" class="Line-6"></path>
+                                    <path d="M9.01170305,0.0202702703 L8.98829695,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(-60.000000) translate(-9.000000, -10.000000) "></path>
+                                    <path d="M8.98829695,0.0202702703 L9.01170305,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(60.000000) translate(-9.000000, -10.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(267.000000, 92.000000)" stroke-linecap="square">
+                                    <path d="M9,0.243902439 L9,19.7560976" class="Line-6"></path>
+                                    <path d="M9.01170305,0.0202702703 L8.98829695,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(-60.000000) translate(-9.000000, -10.000000) "></path>
+                                    <path d="M8.98829695,0.0202702703 L9.01170305,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(60.000000) translate(-9.000000, -10.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(461.000000, 137.000000)" stroke-linecap="square">
+                                    <path d="M9,0.243902439 L9,19.7560976" class="Line-6"></path>
+                                    <path d="M9.01170305,0.0202702703 L8.98829695,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(-60.000000) translate(-9.000000, -10.000000) "></path>
+                                    <path d="M8.98829695,0.0202702703 L9.01170305,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(60.000000) translate(-9.000000, -10.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(66.000000, 72.000000)" stroke-linecap="square">
+                                    <path d="M9,0.243902439 L9,19.7560976" class="Line-6"></path>
+                                    <path d="M9.01170305,0.0202702703 L8.98829695,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(-60.000000) translate(-9.000000, -10.000000) "></path>
+                                    <path d="M8.98829695,0.0202702703 L9.01170305,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(60.000000) translate(-9.000000, -10.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(777.000000, 33.000000)" stroke-linecap="square">
+                                    <path d="M9,0.243902439 L9,19.7560976" class="Line-6"></path>
+                                    <path d="M9.01170305,0.0202702703 L8.98829695,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(-60.000000) translate(-9.000000, -10.000000) "></path>
+                                    <path d="M8.98829695,0.0202702703 L9.01170305,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(60.000000) translate(-9.000000, -10.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(334.000000, 32.000000)" stroke-linecap="square">
+                                    <path d="M9,0.243902439 L9,19.7560976" class="Line-6"></path>
+                                    <path d="M9.01170305,0.0202702703 L8.98829695,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(-60.000000) translate(-9.000000, -10.000000) "></path>
+                                    <path d="M8.98829695,0.0202702703 L9.01170305,19.9797297" class="Line-6" transform="translate(9.000000, 10.000000) rotate(60.000000) translate(-9.000000, -10.000000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(188.000000, 18.000000)" stroke-linecap="round">
+                                    <path d="M21.8701351,0.221649485 L21.0416667,42.7783505 L21.8701351,0.221649485 Z M16.4583333,2.43814433 L21.4118018,8.86597938 L16.4583333,2.43814433 Z M27,2.43814433 L22.0465316,8.86597938 L27,2.43814433 Z M16,40.5618557 L20.9534684,34.1340206 L16,40.5618557 Z M26.5416667,40.5618557 L21.5881982,34.1340206 L26.5416667,40.5618557 Z" class="Combined-Shape"></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-60.000000) translate(-21.500000, -21.500000) "></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-300.000000) translate(-21.500000, -21.500000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(582.000000, 71.500000)" stroke-linecap="round">
+                                    <path d="M21.8701351,0.221649485 L21.0416667,42.7783505 L21.8701351,0.221649485 Z M16.4583333,2.43814433 L21.4118018,8.86597938 L16.4583333,2.43814433 Z M27,2.43814433 L22.0465316,8.86597938 L27,2.43814433 Z M16,40.5618557 L20.9534684,34.1340206 L16,40.5618557 Z M26.5416667,40.5618557 L21.5881982,34.1340206 L26.5416667,40.5618557 Z" class="Combined-Shape"></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-60.000000) translate(-21.500000, -21.500000) "></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-300.000000) translate(-21.500000, -21.500000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(0.000000, 43.000000)" stroke-linecap="round">
+                                    <path d="M21.8701351,0.221649485 L21.0416667,42.7783505 L21.8701351,0.221649485 Z M16.4583333,2.43814433 L21.4118018,8.86597938 L16.4583333,2.43814433 Z M27,2.43814433 L22.0465316,8.86597938 L27,2.43814433 Z M16,40.5618557 L20.9534684,34.1340206 L16,40.5618557 Z M26.5416667,40.5618557 L21.5881982,34.1340206 L26.5416667,40.5618557 Z" class="Combined-Shape"></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-60.000000) translate(-21.500000, -21.500000) "></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-300.000000) translate(-21.500000, -21.500000) "></path>
+                                </g>
+                                <g class="flake" transform="translate(916.000000, 0.000000)" stroke-linecap="round">
+                                    <path d="M21.8701351,0.221649485 L21.0416667,42.7783505 L21.8701351,0.221649485 Z M16.4583333,2.43814433 L21.4118018,8.86597938 L16.4583333,2.43814433 Z M27,2.43814433 L22.0465316,8.86597938 L27,2.43814433 Z M16,40.5618557 L20.9534684,34.1340206 L16,40.5618557 Z M26.5416667,40.5618557 L21.5881982,34.1340206 L26.5416667,40.5618557 Z" class="Combined-Shape"></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-60.000000) translate(-21.500000, -21.500000) "></path>
+                                    <path d="M21.8543408,0.221649485 L21.0612245,42.7783505 L21.8543408,0.221649485 Z M16.6734694,2.43814433 L21.4155653,8.86597938 L16.6734694,2.43814433 Z M26.7653061,2.43814433 L22.0232102,8.86597938 L26.7653061,2.43814433 Z M16.2346939,40.5618557 L20.9767898,34.1340206 L16.2346939,40.5618557 Z M26.3265306,40.5618557 L21.5844347,34.1340206 L26.3265306,40.5618557 Z" class="Combined-Shape" transform="translate(21.500000, 21.500000) rotate(-300.000000) translate(-21.500000, -21.500000) "></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                        </div>
+                        <div id="cont">
+                        <div id="container">
+                        </div>
+                            <div id="gamecontainer">
+                
+                
+                <div id="cran">
+                <svg height="728px" width="80px" viewBox="0 2 80 728" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="iPad" transform="translate(-886.000000, -20.000000)">
+                            <g id="Group-8" transform="translate(886.000000, 20.000000)">
+                                <path d="M2,2 L2,726 L78,726 L78,2 L2,2 Z M0,0 L80,0 L80,728 L0,728 L0,0 Z" class="ram0" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                <g id="Group-4" transform="translate(0.000000, 648.000000)">
+                                    <path d="M1,1 L1,79 L79,79 L79,1 L1,1 Z M0,0 L80,0 L80,80 L0,80 L0,0 Z" class="ram" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square" transform="translate(40.000000, 40.000000) rotate(90.000000) translate(-40.000000, -40.000000) "></path>
+                                </g>
+                                <g id="Group-4-Copy" transform="translate(0.000000, 569.000000)">
+                                    <path d="M1,1 L1,79 L79,79 L79,1 L1,1 Z M0,0 L80,0 L80,80 L0,80 L0,0 Z" class="ram" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square" transform="translate(40.000000, 40.000000) rotate(90.000000) translate(-40.000000, -40.000000) "></path>
+                                </g>
+                                <g id="Group-4-Copy-2" transform="translate(0.000000, 490.000000)">
+                                    <path d="M1,1 L1,79 L79,79 L79,1 L1,1 Z M0,0 L80,0 L80,80 L0,80 L0,0 Z" class="ram" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square" transform="translate(40.000000, 40.000000) rotate(90.000000) translate(-40.000000, -40.000000) "></path>
+                                </g>
+                                <g id="Group-4-Copy-5" transform="translate(0.000000, 411.000000)">
+                                    <path d="M1,1 L1,79 L79,79 L79,1 L1,1 Z M0,0 L80,0 L80,80 L0,80 L0,0 Z" class="ram" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square" transform="translate(40.000000, 40.000000) rotate(90.000000) translate(-40.000000, -40.000000) "></path>
+                                </g>
+                                <g id="Group-4-Copy-4" transform="translate(0.000000, 332.000000)">
+                                    <path d="M1,1 L1,79 L79,79 L79,1 L1,1 Z M0,0 L80,0 L80,80 L0,80 L0,0 Z" class="ram" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square" transform="translate(40.000000, 40.000000) rotate(90.000000) translate(-40.000000, -40.000000) "></path>
+                                </g>
+                                <g id="Group-4-Copy-3" transform="translate(0.000000, 253.000000)">
+                                    <path d="M1,1 L1,79 L79,79 L79,1 L1,1 Z M0,0 L80,0 L80,80 L0,80 L0,0 Z" class="ram" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square" transform="translate(40.000000, 40.000000) rotate(90.000000) translate(-40.000000, -40.000000) "></path>
+                                </g>
+                                <g id="Group-4-Copy-8" transform="translate(0.000000, 174.000000)">
+                                    <path d="M1,1 L1,79 L79,79 L79,1 L1,1 Z M0,0 L80,0 L80,80 L0,80 L0,0 Z" class="ram" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square" transform="translate(40.000000, 40.000000) rotate(90.000000) translate(-40.000000, -40.000000) "></path>
+                                </g>
+                                <g id="Group-4-Copy-7" transform="translate(0.000000, 95.000000)">
+                                    <path d="M1,1 L1,79 L79,79 L79,1 L1,1 Z M0,0 L80,0 L80,80 L0,80 L0,0 Z" class="ram" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square" transform="translate(40.000000, 40.000000) rotate(90.000000) translate(-40.000000, -40.000000) "></path>
+                                </g>
+                                <g id="Group-4-Copy-6" transform="translate(0.000000, 16.000000)">
+                                    <path d="M1,1 L1,79 L79,79 L79,1 L1,1 Z M0,0 L80,0 L80,80 L0,80 L0,0 Z" class="ram" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square" transform="translate(40.000000, 40.000000) rotate(90.000000) translate(-40.000000, -40.000000) "></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <svg height="728px" width="80px" viewBox="0 2 80 728" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="iPad" transform="translate(-886.000000, -20.000000)">
+                            <g id="Group-8" transform="translate(886.000000, 20.000000)">
+                                <path d="M2,2 L2,726 L78,726 L78,2 L2,2 Z M0,0 L80,0 L80,728 L0,728 L0,0 Z" class="ram0" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                <g id="Group-4" transform="translate(0.000000, 648.000000)">
+                                    <path d="M1,1 L1,79 L79,79 L79,1 L1,1 Z M0,0 L80,0 L80,80 L0,80 L0,0 Z" class="ram" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square" transform="translate(40.000000, 40.000000) rotate(90.000000) translate(-40.000000, -40.000000) "></path>
+                                </g>
+                                <g id="Group-4-Copy" transform="translate(0.000000, 569.000000)">
+                                    <path d="M1,1 L1,79 L79,79 L79,1 L1,1 Z M0,0 L80,0 L80,80 L0,80 L0,0 Z" class="ram" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square" transform="translate(40.000000, 40.000000) rotate(90.000000) translate(-40.000000, -40.000000) "></path>
+                                </g>
+                                <g id="Group-4-Copy-2" transform="translate(0.000000, 490.000000)">
+                                    <path d="M1,1 L1,79 L79,79 L79,1 L1,1 Z M0,0 L80,0 L80,80 L0,80 L0,0 Z" class="ram" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square" transform="translate(40.000000, 40.000000) rotate(90.000000) translate(-40.000000, -40.000000) "></path>
+                                </g>
+                                <g id="Group-4-Copy-5" transform="translate(0.000000, 411.000000)">
+                                    <path d="M1,1 L1,79 L79,79 L79,1 L1,1 Z M0,0 L80,0 L80,80 L0,80 L0,0 Z" class="ram" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square" transform="translate(40.000000, 40.000000) rotate(90.000000) translate(-40.000000, -40.000000) "></path>
+                                </g>
+                                <g id="Group-4-Copy-4" transform="translate(0.000000, 332.000000)">
+                                    <path d="M1,1 L1,79 L79,79 L79,1 L1,1 Z M0,0 L80,0 L80,80 L0,80 L0,0 Z" class="ram" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square" transform="translate(40.000000, 40.000000) rotate(90.000000) translate(-40.000000, -40.000000) "></path>
+                                </g>
+                                <g id="Group-4-Copy-3" transform="translate(0.000000, 253.000000)">
+                                    <path d="M1,1 L1,79 L79,79 L79,1 L1,1 Z M0,0 L80,0 L80,80 L0,80 L0,0 Z" class="ram" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square" transform="translate(40.000000, 40.000000) rotate(90.000000) translate(-40.000000, -40.000000) "></path>
+                                </g>
+                                <g id="Group-4-Copy-8" transform="translate(0.000000, 174.000000)">
+                                    <path d="M1,1 L1,79 L79,79 L79,1 L1,1 Z M0,0 L80,0 L80,80 L0,80 L0,0 Z" class="ram" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square" transform="translate(40.000000, 40.000000) rotate(90.000000) translate(-40.000000, -40.000000) "></path>
+                                </g>
+                                <g id="Group-4-Copy-7" transform="translate(0.000000, 95.000000)">
+                                    <path d="M1,1 L1,79 L79,79 L79,1 L1,1 Z M0,0 L80,0 L80,80 L0,80 L0,0 Z" class="ram" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square" transform="translate(40.000000, 40.000000) rotate(90.000000) translate(-40.000000, -40.000000) "></path>
+                                </g>
+                                <g id="Group-4-Copy-6" transform="translate(0.000000, 16.000000)">
+                                    <path d="M1,1 L1,79 L79,79 L79,1 L1,1 Z M0,0 L80,0 L80,80 L0,80 L0,0 Z" class="ram" fill="#FFDB5E" fill-rule="nonzero"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square"></path>
+                                    <path d="M0.716308594,79.2836914 L79.2189941,0.781005859" class="aLine" stroke="#FFDB5E" stroke-linecap="square" transform="translate(40.000000, 40.000000) rotate(90.000000) translate(-40.000000, -40.000000) "></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                </div>
+                
+                    </div>
+                    </div>
+                
+                    <div id="wrapper" class="wrapper">
+                  
+                <div class="fraza fade">
+                    <div class="synapse__logo">
+                        <img src="logo.png">
+                    </div>
+                    <div class="synapse__name">
+                        SYNAPSE
+                    </div>
+                        <div class="descript">
+                            <p>
+                                <span class="p1">We have been implementing projects in architecture and interiors for over 27 years.</span>
+                                <span class="p2">Now you can also create your object — a New Year tree!</span>
+                                <span class="p3">And let it be only the first in the series of successful projects of the new 2019!</span>
+                            </p>
+                            <p class="p4">
+                                <span style="font-style: italic; font-size: 20px;">#DAkaTyohaar</span>
+                            </p>
+                
+                        </div>
+                
+                    </div>
+                
+                    </div>
+                
+                    <div id="tt">
+                        <p>Rotate your device</p>
+                    </div>
+                   <canvas id="fbcanvas" width="1048" height="548" style="background-color: red; width: 1048px; height: 548px; display: none;"></canvas>
+                    <canvas id="vkcanvas" width="1074" height="480" style="background-color: blue; width: 1074px; height: 480px; display: none;"></canvas>
+                
+                <!--///////////////////////////////////////////////////////////////////// COVER PAGE ENDS -->
             </div>
 
             <div id="green" class="fullpage">
@@ -157,6 +904,119 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="slideshow.js"></script>
+    <!-- COVER KI LINKS -->
+    <script>
+        function res(){
+            if(window.innerWidth>window.innerHeight){
+            //TweenMax.set(".posTree",{opacity:1})
+            }else{
+            //TweenMax.set(".posTree",{opacity:0})   
+            }
+        }
+             
+        function readDeviceOrientation() {
+                                
+            if (Math.abs(window.orientation) === 90) {
+                // Landscape
+                tt.style.display="block";
+            } else {
+                // Portrait
+                tt.style.display="none";
+            }
+        }
+        
+        var md = new MobileDetect(window.navigator.userAgent);
+     
+                var tlballs=new TimelineMax();
+                var tltree=new TimelineMax({delay:0.1});
+                var tlflake=new TimelineMax({delay:1});
+                var tlloader=new TimelineMax();
+                var finanim= new TimelineMax();
+                var _lang="en";
+        
+                        finanim.from(".logo0",1,{alpha:0})
+                                .from(".epic",2,{drawSVG:0, ease:Power1.easeInOut})
+                                .from(".Line-7", 1, {opacity:1, scaleX:0, ease:Power1.easeInOut,transformOrigin:"left"},"-=2")
+                                .from(".Line-11", 1, {opacity:1, scaleX:0, ease:Power1.easeInOut,transformOrigin:"right"},"-=2")
+                                .from(".Line-16", 1, {opacity:1, scaleY:0, ease:Power1.easeInOut,transformOrigin:"center"},"-=2")
+                                .from(".100perc", 1, {opacity:0},"-=2")
+                                .from("#resdiscript", 1, {opacity:0},"-=1")
+                                .from(".soc_btns", 1, {opacity:0},"-=0.5")
+                                .from(".replay_block", 1, {opacity:0},"-=0.5")
+        
+                                finanim.pause();
+        
+                
+        
+                window.onload=function(){
+        
+                if(md.phone()){
+                        window.onorientationchange = readDeviceOrientation;
+                        readDeviceOrientation()
+                }
+        
+                TweenMax.set(".posTree",{x:"-25%", opacity:1})
+                res();
+        
+                window.onresize=res;
+                document.getElementById('wrapper').style.display="block";
+                document.getElementById('balls').style.display="block";
+                document.getElementById('trees').style.display="block";
+                tlloader.to(loader,0.8,{width:0, height:0, margin:0, alpha:0, ease:Cubic.easeInOut});
+        
+                var hexagon = $('.Group-2').toArray();
+                hexagon.sort(function(){return 0.5-Math.random()});
+                
+                var trees_arr = $('.tree').toArray();
+                trees_arr.sort(function(){return 0.5-Math.random()});
+                
+                var flakes_arr = $('.flake').toArray();
+                flakes_arr.sort(function(){return 0.5-Math.random()});
+                
+                
+                tlballs.staggerFrom(hexagon,1.5,{y:-120, ease: CustomEase.create("custom", "M0,0,C0,0,0.036,0.506,0.072,0.946,0.072,1.164,0.203,1.111,0.23,0.978,0.262,0.818,0.303,0.876,0.307,0.882,0.335,0.925,0.349,0.965,0.38,1.006,0.43,1.088,0.484,1.022,0.53,0.997,0.58,0.964,0.667,1.002,0.725,1.004,0.829,1.008,1,1,1,1")}, 0.01)
+                
+        
+                
+                tltree.staggerFrom(trees_arr,1.5,{scaleY:0, ease:Elastic.easeInOut, transformOrigin:"bottom"},0.05);
+                
+            
+                tlflake.staggerFrom(flakes_arr,1,{y:-100, alpha:0, ease:Quart.easeOut},0.05);
+                
+                
+                var tl2=new TimelineMax({delay:2});
+                tl2.from(".logo1", 0.8, {alpha:0})
+                    .from(".HappyNewYear", 5, {drawSVG:0, ease:Power1.easeInOut},"-=0.5")
+                    .from(".p1", 1, {alpha:0, ease:Power1.easeInOut},"-=4.5")
+                    .from(".p2", 1, {alpha:0, ease:Power1.easeInOut},"-=4.0")
+                    .from(".p3", 1, {alpha:0, ease:Power1.easeInOut},"-=3.5")
+                    .from(".p4", 1, {alpha:0, ease:Power1.easeInOut},"-=3.0")
+                    .from(".years", 1, {opacity:0, ease:Power1.easeInOut},"-=4")
+                    .from(".Line-77", 1, {opacity:1, scaleX:0, ease:Power1.easeInOut,transformOrigin:"left"},"-=4")
+                    .from(".Line-111", 1, {opacity:1, scaleX:0, ease:Power1.easeInOut,transformOrigin:"right"},"-=4")
+                    .from(".Line-15", 1, {drawSVG:0, ease:Power1.easeInOut},"-=4")
+                    .from(".Line-10", 1, {opacity:1, scaleX:0, ease:Power1.easeInOut,transformOrigin:"right"},"-=4")
+                    .from(".Line-12", 1, {opacity:1, scaleX:0, ease:Power1.easeInOut,transformOrigin:"left"},"-=4")
+                    .from(".Line-166", 1, {opacity:1, scaleY:0, ease:Power1.easeInOut,transformOrigin:"center"},"-=4")
+                    .from("#btn", 1.5, {alpha:0, scale:0.8, ease:Elastic.easeOut},"-=2.5")
+                
+                }
+            </script>
+            <script src="js/three.min.js"></script>
+            <script src="js/three.js"></script>
+            <script src="js/ammo.js"></script>
+        
+            <script src="js/WebGL.js"></script>
+            <script src='js/lines/LineSegmentsGeometry.js'></script>
+            <script src='js/lines/LineGeometry.js'></script>
+            <script src='js/lines/WireframeGeometry2.js'></script>
+            <script src='js/lines/LineSegments2.js'></script>
+            <script src='js/lines/Line2.js'></script>
+            <script src='js/lines/Wireframe.js'></script>
+            <script src="js/ConvexGeometry.js"></script>
+            <script src="js/QuickHull.js"></script>
+            <script src="js/game2.js"></script>
+    <!-- COVER KI LINKS ENDS -->
         <script src="index.js"></script>
     </body>
 </html>

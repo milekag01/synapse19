@@ -19,7 +19,7 @@
     right: -60px;
     width: 60px;
     height: 60px;
-    background: #fd0;
+    background: #FFDB5E;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -82,7 +82,7 @@
     position: absolute;
     width: 100%;
     height: 50%;
-    background-color: #fd0;
+    background-color: #FFDB5E;
     z-index: 15;
     transform: scaleX(0);
     transform-origin: right;

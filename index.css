@@ -25,7 +25,7 @@ body{
     text-decoration: none;
     height: 30px;
     line-height: 30px;
-    font-size: 24px;
+    font-size: 17px;
     /* background: #fff; */
     /* width: 140px; */
     color: #fff;
@@ -36,7 +36,8 @@ body{
     border-top-right-radius: 15px;
     border-top-left-radius: 15px; */
     text-transform: uppercase;
-    text-align: center;
+    text-align: right;
+    letter-spacing: 1px;
 }
 
 .outer-nav li a:hover{
@@ -64,7 +65,7 @@ body{
 }
 
 #main-container div#red{
-    background-color: red;
+    /* background-color: red; */
 }
 
 #main-container div#green{
