@@ -1,0 +1,100 @@
+/* snappy scrolling */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: raleway;
+}
+
+.outer-nav{
+    position: fixed;
+    top: 50%;
+    right: 2%;
+    /* left: 0; */
+    transform: translateY(-70%);
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+
+.outer-nav li {
+    list-style: none;
+}
+
+.outer-nav li a{
+    display: block;
+    text-decoration: none;
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    /* background: #fff; */
+    /* width: 140px; */
+    color: #fff;
+    /* margin: 4px 0;
+    margin-left: 10px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px; */
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.outer-nav li a:hover{
+    color: #262626;
+    /* color: #fff; */
+}
+
+@media (max-width:700px){
+    .outer-nav{
+        visibility: hidden;
+    }
+}
+
+#main-container {
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+.fullpage{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#main-container div#red{
+    background-color: red;
+}
+
+#main-container div#green{
+    background-color: green;
+}
+
+#main-container div#blue{
+    /* background-color: blue; */
+}
+
+#main-container div#yellow{
+    background-color: yellow;
+}
+
+#main-container div #wrapper{
+    /* position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0; */
+}
+
+/* snappy scroll ends here */
+
+/* custom scroll bar */
+::-webkit-scrollbar{
+    width: 0px;
+}
+::-webkit-scrollbar-thumb{
+    background: #D3D3D3;
+    border-radius: 3px;
+}
+
+/* custom scroll bar ends here */
