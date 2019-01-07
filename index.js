@@ -4,4 +4,5 @@ function toggle_div(){
     element.classList.toggle('sidebar_active');
 }
 
+
 // sidebar ends

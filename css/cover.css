@@ -994,9 +994,13 @@ padding-top: 33px;
   } */
   body {
 	/* color: #FFF; */
-	background-color: #FD940A;
-	background-image: radial-gradient(circle, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%);
+	background-color: #FD940A; 
+	background-image: radial-gradient(circle, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%); 
 	background-size: cover;
+
+	/* background: #2980B9;  
+	background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);  
+	background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);  */
   }
   
   /* COVER KA CSS ENDS HERE */
