@@ -6,3 +6,11 @@ function toggle_div(){
 
 
 // sidebar ends
+
+         
+                $(function() {
+                    $.scrollify({
+                    section : ".fullpage-scroll",
+                    });
+                });
+         
