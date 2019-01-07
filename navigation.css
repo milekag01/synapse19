@@ -25,6 +25,7 @@
     justify-content: center;
     align-items: center;
     /* border-radius: 40px; */
+    animation: FadeIn 4.2s linear;
 }
 
 .toggle::before{
@@ -33,8 +34,8 @@
     left: 0;
     width: 15px;
     height: 15px;
-    border-top: 2px solid #000; 
-    border-right: 2px solid #000; 
+    border-top: 2px solid #feffff; 
+    border-right: 2px solid #feffff; 
     transform: rotate(45deg);
     transition: 0.5s;
 }
@@ -122,3 +123,29 @@
         padding: 30px;
     }
 }
+
+/* ///////// setting keyframe on navbar arrow */
+
+@-webkit-keyframes FadeIn {
+	0% {
+	  opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  @keyframes FadeIn {
+	0% {
+		opacity: 0;
+	  }
+	  50%{
+		  opacity: 0;
+	  }
+	  100% {
+		opacity: 1;
+	  }
+  }
+/* /////////////////////////// */

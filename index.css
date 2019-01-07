@@ -14,6 +14,7 @@ body{
     margin: 0;
     padding: 0;
     z-index: 10;
+    animation: FadeIn 4.2s linear;
 }
 
 .outer-nav li {
@@ -26,9 +27,9 @@ body{
     height: 30px;
     line-height: 30px;
     font-size: 17px;
+    color: #feffff;
     /* background: #fff; */
     /* width: 140px; */
-    color: #fff;
     /* margin: 4px 0;
     margin-left: 10px;
     border-bottom-right-radius: 15px;
@@ -39,10 +40,16 @@ body{
     text-align: right;
     letter-spacing: 1px;
 }
-
+.outer-nav li a:link{
+    color: #feffff;
+}
 .outer-nav li a:hover{
     color: #262626;
     /* color: #fff; */
+}
+
+.outer-nav li a:active{
+    color: #111;
 }
 
 @media (max-width:700px){
@@ -69,7 +76,9 @@ body{
 }
 
 #main-container div#green{
-    background-color: green;
+    background: #00d2ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #00d2ff, #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #00d2ff, #3a7bd5);
 }
 
 #main-container div#blue{
@@ -77,7 +86,15 @@ body{
 }
 
 #main-container div#yellow{
-    background-color: yellow;
+    background: #7d35ef; /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #7d35ef, #f507c0); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #7d35ef, #f507c0);
+}
+
+#main-container div#steeleblue{
+    background: #16222a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #16222a, #414345); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #16222a, #414345);
 }
 
 #main-container div #wrapper{
@@ -99,3 +116,64 @@ body{
 }
 
 /* custom scroll bar ends here */
+
+/* ///////// setting keyframe on outer navbar */
+
+@-webkit-keyframes FadeIn {
+	0% {
+	  opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  @keyframes FadeIn {
+	0% {
+		opacity: 0;
+	  }
+	  50%{
+		  opacity: 0;
+	  }
+	  100% {
+		opacity: 1;
+	  }
+  }
+/* /////////////////////////// */
+
+/* //SOCIAL MEDIA LINKS */
+.social-media{
+    position: absolute;
+    bottom: 3%;
+    left: 1.5%;
+    z-index: 10;
+    list-style: none;
+    animation: FadeIn 4.2s linear;
+}
+.social-media li {
+    display: inline-flex;
+    border: 2px solid white;
+    border-radius: 100px;
+    padding: 8px;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 0 4px;
+    transition: all .2s;
+}
+
+.social-media li a{
+    color: white;
+    text-decoration: none;
+}
+
+.social-media li:hover{
+    transform: scale(1.06); 
+    cursor: pointer;
+}
+
+/* //SOCIAL MEDIA LINKS ENDS */
