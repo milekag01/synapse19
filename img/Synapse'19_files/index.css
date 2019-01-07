@@ -148,10 +148,10 @@ body{
 
 /* //SOCIAL MEDIA LINKS */
 .social-media{
-    position: fixed;
+    position: absolute;
     bottom: 3%;
     left: 1.5%;
-    z-index: 10;
+    z-index: 20;
     list-style: none;
     animation: FadeIn 4.2s linear;
 }
