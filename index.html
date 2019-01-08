@@ -1,7 +1,7 @@
 <html>
     <head>
-            <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
         <title>Synapse'19</title>
         <link rel="icon" href="logo.png" type="image/gif" sizes="16x16">
 
@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="slideshow.css"/>
         <link rel="stylesheet" type="text/css" href="navigation.css"/>
+        <link rel="stylesheet" type="text/css" href="sitemap.css"/>
 
     <!-- COVER KI LINKS -->
         <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
@@ -21,6 +22,7 @@
         <script src="https://code.createjs.com/1.0.0/soundjs.min.js"></script>
 
     <!-- COVER KI LINKS ENDS ) -->
+    <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
 
         <link rel="stylesheet" type="text/css" href="index.css"/>
 
@@ -31,10 +33,15 @@
             <div class="toggle" onclick="toggle_div()"></div>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Pronites</a></li>
+                <li><a href="#">Registration</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Timeline</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a data-fancybox data-width="640" data-height="360" href="synapse.mp4" target="_blank">Trailer</a></li>
+                <li><a href="pdf.html" target="_blank">Brochure</a></li>
                 <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Brochure</a></li>
+
+                
             </ul>
         </div>
         <!-- nav bar ends here -->
@@ -533,14 +540,14 @@
                                 </g>
                                 <g class="tree" transform="translate(794.000000, 130.000000)">
                                     <polygon class="Triangle" points="34 0 68 108 0 108"></polygon>
-                                    <rect class="Rectangle" x="26.5" y="108" width="16" height="24"></rect>
+                                    <rect class="Rectangle" x="26.5" y="108" width="16" height="34"></rect>
                                 </g>
                                 <g class="tree" transform="translate(219.000000, 171.000000)">
                                     <polygon class="Triangle" points="23 0 46 74 0 74"></polygon>
                                     <rect class="Rectangle" x="17.5" y="74" width="11" height="21"></rect>
                                 </g>
                                 <g class="tree" transform="translate(616.000000, 68.000000)">
-                                    <rect class="Rectangle" x="63.5" y="170.5" width="16" height="24"></rect>
+                                    <rect class="Rectangle" x="63.5" y="170.5" width="16" height="32"></rect>
                                     <path d="M57.301086,67.6015625 L30,67.6015625 C49.9025632,53.7837246 71,17.4213412 71,4.97379915e-14 C71,17.4157673 91.9498771,53.7837246 112,67.6015625 L85.6347269,67.6015625 C96.5997973,87.6313272 112.495122,107.98 128,118.601562 L95.6274738,118.601562 C108.752689,139.558825 125.55119,159.407441 142,170.601562 C72.2868087,170.601562 71,170.601562 -1.56319402e-13,170.601562 C16.3286314,159.40684 33.1217021,139.558832 46.274068,118.601562 L15,118.601562 C30.3915799,107.979441 46.3017279,87.6315879 57.301086,67.6015625 Z" class="Combined-Shape"></path>
                                 </g>
                                 <g class="tree" transform="translate(294.000000, 153.000000)">
@@ -569,7 +576,7 @@
                                     <path d="M0,29.3007812 L26,69.8007812" class="Line-5" transform="translate(13.000000, 49.500000) scale(-1, 1) translate(-13.000000, -49.500000) "></path>
                                     <path d="M0,59.4023438 L26,99.9023437" class="Line-5" transform="translate(13.000000, 79.601562) scale(-1, 1) translate(-13.000000, -79.601562) "></path>
                                 </g>
-                                <g class="tree" transform="translate(920.000000, 164.000000)" stroke-linecap="square">
+                                <g class="tree" transform="translate(920.000000, 176.000000)" stroke-linecap="square">
                                     <path d="M21,0.235288558 L21,96.2177419" class="Line-4"></path>
                                     <path d="M20,0.234756098 L41,31.8445122" class="Line-5"></path>
                                     <path d="M20,23.2347561 L41,54.8445122" class="Line-5"></path>
@@ -852,7 +859,33 @@
                             </div>
                         </div>
                         
-                        <div class="slideshow__slide js-slider-home-slide is-prev" data-slide="3">
+                        <div class="slideshow__slide js-slider-home-slide is-next" data-slide="3">
+                            <div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1" data-position="top" data-target="#js-header">
+                                <div class="slideshow__slide-background-load-wrap background-absolute">
+                                    <div class="slideshow__slide-background-load background-absolute">
+                                        <div class="slideshow__slide-background-wrap background-absolute">
+                                            <div class="slideshow__slide-background background-absolute">
+                                                <div class="slideshow__slide-image-wrap background-absolute">
+                                                    <div class="slideshow__slide-image background-absolute" style="background-image: url('https://images.pexels.com/photos/196666/pexels-photo-196666.jpeg?auto=compress&cs=tinysrgb&h=1080&w=1920');"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slideshow__slide-caption">
+                                <div class="slideshow__slide-caption-text">
+                                    <div class="container js-parallax" data-speed="2" data-position="top" data-target="#js-header">
+                                        <h1 class="slideshow__slide-caption-title">Hey, take a time to relax!</h1>
+                                        <a class="slideshow__slide-caption-subtitle -load o-hsub -link" href="#">
+                                            <span class="slideshow__slide-caption-subtitle-label">Everybody needs</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="slideshow__slide js-slider-home-slide is-prev" data-slide="4">
                             <div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1" data-position="top" data-target="#js-header">
                                 <div class="slideshow__slide-background-load-wrap background-absolute">
                                     <div class="slideshow__slide-background-load background-absolute">
@@ -910,7 +943,50 @@
                 </div>
             </div>
             <div id="yellow" class="fullpage fullpage-scroll" data-section-name="glimpse"><h1>Yellow</h1></div>
-            <div id="steeleblue" class="fullpage fullpage-scroll" data-section-name="sitemap"><h1>steeleblue</h1></div>
+            
+        <!-- //SITE MAP STARTS -->
+            <div id="steeleblue" class=" fullpage-scroll" data-section-name="sitemap">
+                <footer class="footer">
+                    <div class="footer__logo-box">
+                        <div class="footer__logo">
+                            <img src="logo.png" alt="Full logo">
+                            <p>SYNAPSE<br>#DAkaTyohaar<br>21-24 FEBRUARY 2019 </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1-of-2">
+                            <div class="footer__navigation">
+                                <ul class="footer__list">
+                                    <li class="footer__item"><a href="#home" class="footer__link">Home</a></li>
+                                    <li class="footer__item"><a href="#aboutus" class="footer__link">About</a></li>
+                                    <li class="footer__item"><a href="#pronites" class="footer__link">Pronites</a></li>
+                                    <li class="footer__item"><a href="#glimpse" class="footer__link">Glimpse</a></li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Events</a></li>
+                                    
+                                    <li class="footer__item"><a href="#" class="footer__link">Gallery</a></li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Timeline</a></li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                                    <li class="footer__item"><a href="synapse.mp4" target="_blank" class="footer__link" data-fancybox data-width="640" data-height="360">Trailer</a></li>
+                                    <li class="footer__item"><a href="pdf.html" class="footer__link" target="_blank">Brochure</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-1-of-2">
+                            <div class="footer__navigation">
+                                <ul class="footer__list">
+                                    <li class="footer__item"><a href="#" class="footer__link">Registration</a></li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Accomodation</a></li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Buy T-shirt</a></li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Campus Ambassdor</a></li>
+
+                                                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        <!-- //SITE MAP ENDS -->
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="slideshow.js"></script>
@@ -1028,6 +1104,7 @@
             <script src="js/game2.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+            <script src="jquery.fancybox.min.js"></script>
 
     <!-- COVER KI LINKS ENDS -->
         <script src="index.js"></script>

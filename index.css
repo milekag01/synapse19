@@ -52,7 +52,7 @@ body{
     color: #111;
 }
 
-@media (max-width:700px){
+@media (max-width:905px){
     .outer-nav{
         visibility: hidden;
     }
@@ -95,10 +95,16 @@ body{
 }
 
 #main-container div#steeleblue{
-    background: #16222a; /* fallback for old browsers */
-    background: -webkit-linear-gradient(45deg, #16222a, #414345); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(45deg, #16222a, #3a6073);
+    /* background: #333;  */
+    /* background: -webkit-linear-gradient(45deg, #333, #343434);
+    background: linear-gradient(45deg, #333, #343434); */
+
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #333, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #333, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
+
 
 #main-container div #wrapper{
     /* position: absolute;
@@ -180,3 +186,25 @@ body{
 }
 
 /* //SOCIAL MEDIA LINKS ENDS */
+
+/* ////////////////NEON */
+/* .synapse__name {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #fff;
+    font-family: Monoton;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes neon1 {
+    from {
+       text-shadow: 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff, 0 0 80px #fff, 0 0 90px #fff, 0 0 110px #fff, 0 0 160px #fff; 
+      text-shadow: 0 0 40px #fff ;
+    }
+    to {
+      text-shadow: 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 45px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 85px #fff;
+    }
+  } */
