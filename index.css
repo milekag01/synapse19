@@ -79,9 +79,15 @@ body{
 }
 
 #main-container div#green{
-    background: #00d2ff; /* fallback for old browsers */
-    background: -webkit-linear-gradient(45deg, #00d2ff, #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
+    /* background: #00d2ff; 
+    background: -webkit-linear-gradient(45deg, #00d2ff, #3a7bd5); 
     background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+     */
+
+     background-color: #FD940A; 
+     background-image: url('aboutus.jpg'); 
+     background-size: cover;
+    background-position: center;
 }
 
 #main-container div#blue{
