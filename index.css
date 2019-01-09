@@ -84,10 +84,13 @@ body{
     background: linear-gradient(45deg, #00d2ff, #3a7bd5);
      */
 
-     background-color: #FD940A; 
+     /* background-color: #FD940A; 
      background-image: url('aboutus.jpg'); 
      background-size: cover;
-    background-position: center;
+    background-position: center; */
+    /* background-color: #FD940A;  */
+	background-image: linear-gradient(to bottom, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%); 
+	background-size: cover;
 }
 
 #main-container div#blue{
