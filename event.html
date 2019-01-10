@@ -3,11 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Synapse'19</title>
-		<meta name="description" content="Grid Layout with Motion Hover Effect and Content Preview" />
-		<meta name="keywords" content="grid, css, layout, template, hover, content, gsap, tweenmax, overlay" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="favicon.ico">
+		<title>Synapse'19 | Events</title>
+		<link rel="icon" href="logo.png" type="image/gif" sizes="16x16">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="loader.css"/>
 		<link rel="stylesheet" type="text/css" href="css/event.css" />
 		<!-- <link rel="stylesheet" type="text/css" href="css/eventback.css" /> -->
 		<script>
@@ -25,6 +24,13 @@
 		</script>
 	</head>
 	<body class="loading">
+		
+		<a class="top-front-logo" href="/"><img src="logo.png"></a>
+		
+		<div class="preloader">
+			<div class="loader"></div>
+		</div>
+		
 		<svg class="hidden">
 			<symbol id="icon-arrow" viewBox="0 0 24 24">
 				<title>arrow</title>
@@ -37,11 +43,10 @@
 			</symbol>
 		</svg>
 		<main>
-			<div class="content">
-				<header class="codrops-header">
-					<!--  -->
-				</header>
+			<div class="heading--event">
+				Events
 			</div>
+
 			<div class="content">
 				<div class="grid">
 					<a class="grid__item" href="#preview-1">
@@ -125,6 +130,16 @@
 							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
 						</div>
 					</a>
+					<a class="grid__item" href="#preview-18">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="assets/events/battle.jpeg" alt="Some image"/>
+							<h3 class="box__title box__title--straight event-long-name-pre"><span class="box__title-inner" data-hover="Battle of">Battle of</span></h3>
+							<h3 class="box__title box__title--bottom event-long-name-suf"><span class="box__title-inner" data-hover="Bands">Bands</span></h3>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Music</span></h4>
+							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+						</div>
+					</a>
 					<a class="grid__item" href="#preview-10">
 						<div class="box">
 							<div class="box__shadow"></div>
@@ -156,8 +171,8 @@
 						<div class="box">
 							<div class="box__shadow"></div>
 							<img class="box__img" src="assets/events/crazymaths.jpg" alt="Some image"/>
-							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="crazy">crazy</span></h3>
-							<h3 class="box__title box__title--bottom" style="bottom: 2rem;"><span class="box__title-inner" data-hover="Math">Math</span></h3>
+							<h3 class="box__title box__title--straight event-long-name-pre"><span class="box__title-inner " data-hover="crazy">crazy</span></h3>
+							<h3 class="box__title box__title--bottom event-long-name-suf"><span class="box__title-inner" data-hover="Math">Math</span></h3>
 							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">online</span></h4>
 							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
 						</div>
@@ -166,8 +181,8 @@
 						<div class="box">
 							<div class="box__shadow"></div>
 							<img class="box__img" src="assets/events/googlelockholmes.jpg" alt="Some image"/>
-							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="googlock">googlock</span></h3>
-							<h3 class="box__title box__title--bottom "><span class="box__title-inner" data-hover="holmes">holmes</span></h3>
+							<h3 class="box__title box__title--straight event-long-name-pre"><span class="box__title-inner" data-hover="googlock">googlock</span></h3>
+							<h3 class="box__title box__title--bottom event-long-name-suf"><span class="box__title-inner " data-hover="holmes">holmes</span></h3>
 							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Online</span></h4>
 							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
 						</div>
@@ -222,7 +237,7 @@
 						<img class="box__img box__img--original" src="assets/events/footloose.jpg" alt="Some image"/>
 						<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner">Footloose</span></h3>
 						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Dance</span></h4>
-						<div class="box__deco box__deco--top">&#10115;</div>
+						<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
 					</div>
 					<div class="overlay__content">
 							<h2 class="event-name-modal">
@@ -1205,50 +1220,53 @@
                         </h2>
                         <hr class="under_head">
                         <p class="event-desc-modal">
-                            Taking pictures is savoring life intensely, every hundredth of a second. Life goes on, but a
-                            photograph is a memento of that moment. A photograph has the ability to convey emotion,
-                            mood, narrative, ideas, and messages – all of which are important elements of storytelling.
-                            We celebrate photography as an art and provide you with the opportunity to compete with the
-                            best in this genre and showcase your talent. Capture moments and make a story from them on
-                            given theme.
-                            <br>
+								“In photography there is a reality so subtle that it becomes more real than reality.”<br>
+								<em>— Alfred Stieglitz</em><br><br>
+								How often does it happen that we want to freeze a moment into our memory forever!  Well, photographers take an instant of time, altering life by holding it still. If you are one, this is just the right platform to showcase your talent and art. 
+								<br><br>Submit the best of your collection and give a creative caption and hashtag related to the selected theme for all of your entries. There will be two rounds: 
+								
+							<br>
+							<ol>
+								<li>Preliminary Round for shortlisting. Only if you get short-listed, you will have to pay the registration fees for the fest. (All events in just 100 Rs. and also a certificate will be given.)</li>
+								<li>Final Round for judging and voting. Your picture will be exhibited during the entire fest with your name (your chance to get famous).</li>
+							</ol>
 
                         </p>
-                        <h3 class="event-name-modal">Rules</h3>
+						<h3 class="event-name-modal">Themes</h3>
+						<ol>
+							<li>Nature</li>
+							<li>Life</li>
+							<li>Architecture</li>
+							
+						<ol>
+								<h3 class="event-name-modal">Rules and Regulations</h3>
                         <ul>
-                            <li class="event-desc-modal-li">​​Camera Resolution should be at least 3.2 megapixels.
-
+                            <li class="event-desc-modal-li">
+								You can submit a maximum of three pictures based on theme. Mail them to conceive.synapse@gmail.com.
                             </li>
-                            <li class="event-desc-modal-li">Photographs must be clicked on a date later than given date.
-
+                            <li class="event-desc-modal-li">
+								For photo editing, only global editing i.e. cropping and adjustment of hue/saturation; brightness/contrast levels are allowed. Photo-morphing, manipulations, use of software or local editing is not allowed.
                             </li>
-                            <li class="event-desc-modal-li">​​One without EXIF data (and hence the date) will not be
-                                accepted. Make sure that your camera date is set before you click a picture.
+                            <li class="event-desc-modal-li">
+								Participants have to submit both the edited and original entries for judging. Make two different folders: one for original and another for edited. Send a zip (Name that zip as your name_synapse19) containing these folders.
                             </li>
-                            <li class="event-desc-modal-li">With photo editing, only global editing i.e. cropping and
-                                adjustment of hue/saturation; brightness/contrast levels are allowed. Photo-morphing,
-                                manipulations, use of software like the classroom or local editing is not allowed.
+                            <li class="event-desc-modal-li">Give name of the image as: Themename_imagenumber (eg: Nature_01). Also, make a separate
+								 doc file for caption of each image and give the same name as mentioned above and put them into the edited pictures folder.
                             </li>
-                            <li class="event-desc-modal-li">Participants have to submit both the edited and original
-                                entries for judging.
+                            <li class="event-desc-modal-li">
+									Do not include your credentials (name, address etc), watermarks in the picture or the frame. Such photos will be disqualified.
                             </li>
-                            <li class="event-desc-modal-li">Participants have to submit an overall description of the
-                                photo-story not exceeding 80 words. Individual photo-captions are not allowed.
-
+     
+                            <li class="event-desc-modal-li">​​The decision of judges will be final and binding.	</li>
+                            <li class="event-desc-modal-li">
+									Any sign of plagiarism will lead to disqualification.
                             </li>
-                            <li class="event-desc-modal-li">​​Do not include your credentials (name, address etc),
-                                watermarks in the picture or the frame. Such photos will be disqualified.
-                            </li>
-                            <li class="event-desc-modal-li">Once the best photo-stories are shortlisted, the concerned
-                                participants will be asked to submit the scanned copy of their present college ID card.
-
-                            </li>
-                            <li class="event-desc-modal-li">The decision of judges will be final and binding.
-                            </li>
-                            <li class="event-desc-modal-li">Any sign of plagiarism will lead to disqualification.
-
-                            </li>
-                        </ul>
+						</ul>
+							<P>
+									Contact:<br>
+									Dhruv Mendpara: 8460803903<br>
+									Saloni Dharva: 720398628 									
+							</P>
 
 					</div>
 				</div>
@@ -1323,12 +1341,50 @@
 						The final round shall also begin in 20-30 min after treasure hunt. 
 					</div>
 				</div>
+				<div class="overlay__item" id="preview-18">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="assets/events/battle.jpeg" alt="Some image"/>
+						<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner">Battle of bands</span></h3>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Music</span></h4>
+						<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+					</div>
+					<div class="overlay__content">
+						Basic rules:
+
+						<ol>
+						<li>For the purpose of this competition band is defined as three or more people with at least two people playing a musical instrument.</li>
+						<li>Members of the band must be between the ages of 15 and 23.</li>
+						<li>All band members must carry ID cards.</li>
+						<li> Band members must be prepared to submit a typed copy of the lyrics they will perform.<br>
+								Lyrics cannot include profanity, racist remarks, sexually explicit content or violence.</li>
+						
+						<li> Bands must bring their own equipment (guitars, amps, keyboards, etc.). Microphones and drum sets will be provided.</li>
+						
+						<li> Equipment cannot be dropped off to the college.
+							<br>The college and college staff are not responsible for any band equipment.
+						</li>
+
+						<li> Bands will have 15-20 minutes to set up, perform and disband.<br>
+								Any band that goes over the allotted time will have points deducted.<br>
+								Four songs total are allowed and only two are allowed to be cover songs.</li>
+						
+						<li> Only the band members listed on the registration form will be allowed on stage. </li>
+						<li> A panel of judges will score musicians on a point system. Judging criteria includes technical proficiency, musicality, performance, creativity and audience reaction. </li>
+						<li> The removal of clothing and the use of obscene language and gesture are prohibited and will result in the band being disqualified and escorted from the building. </li>
+						<li> All band members under 18 must have parent permission. </li>
+						</ol>
+
+					</div>
+				</div>
 				
 				<button class="overlay__close"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
 			</div>
 		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/TweenMax.min.js"></script>
 		<script src="js/demo.js"></script>
+		<script src="/loader.js"></script>
 	</body>
 </html>
