@@ -1,0 +1,66 @@
+
+.preloader
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background: #000;
+  transition: 3s;
+
+}
+.preloader.complete
+{
+  opacity: 0;
+  transition: 3.5s;
+  animation: back-part 3.5s linear;
+}
+
+.loader
+{
+  background-image: url('logo.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  width: 150px;
+  height: 150px;
+  animation: animate 4s linear infinite;
+  -webkit-animation: animate 4s linear infinite;
+
+
+  z-index: 1;
+  transition: 3s;
+
+}
+.loader.complete1
+{
+  transition: 1s;
+  opacity: 0;
+}
+@keyframes animate
+{
+  0%
+  {
+    transform:  rotate(0deg);
+  }
+  100%
+  {
+    transform: rotate(360deg) ;
+  }
+}
+
+@keyframes back-part
+{
+  0%
+  {
+    opacity: 1;
+  }
+  100%
+  {
+    opacity: 0;
+  }
+}

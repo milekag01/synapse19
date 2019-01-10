@@ -6,10 +6,10 @@ body {
   background: white;
   -webkit-font-smoothing: antialiased;
 }
-/* 
+
 #head-div {
   display: flex;
-  height: 10%;
+  height: 100%;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -20,9 +20,9 @@ body {
   font-family: 'Righteous', cursive;
   font-size: 126px;
   font-weight: 700;
-  color: black;
+  color: white;
   text-align: center;
-} */
+}
 
 p {
   line-height: 1.5em;
@@ -33,15 +33,15 @@ h1 + p, p + p {
 }
 
 .container {
-  padding: 20px 60px;
+  padding: 40px 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .card-wrap {
-  margin: 20px;
-  opacity: 0.6;
+  margin: 10px;
+  opacity: 0.8;
   -webkit-transform: perspective(800px);
           transform: perspective(800px);
   -webkit-transform-style: preserve-3d;
@@ -175,48 +175,157 @@ canvas {
   z-index:-1;
 }
 
-#stripes {
-  top: 0;
-  width: 100%;
-  height: 100%;
-	display: grid;
-  position: fixed;
-  z-index: -10;
-  background-attachment: fixed;
-	grid-template-rows: repeat(12, 1fr);
-	grid-template-columns: repeat(12, 1fr);
-	clip-path: polygon(100% 0, 100% 70%, 0 99%, 0 0);
-	background: linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%);
+/* Background */
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
-#stripes :nth-child(1) {
-	grid-area: 1 / 1 / span 4 / span 2;
-	background-color: #53f;
-	clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+body{
+    font-family: 'Exo', sans-serif;
 }
 
-#stripes :nth-child(2) {
-	grid-area: 1 / 3 / span 3 / span 2;
-	background-color: #4553ff;
-	clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%);
-	transform: translateY(-30px);
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
 }
 
-#stripes :nth-child(3) {
-	grid-area: 1 / 5 / span 2 / span 2;
-	background-color: #4f40ff;
-	clip-path: polygon(0 0, 100% 0, 99% 5%, 0 70%);
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
 }
 
-#stripes :nth-child(4) {
-	grid-area: 3 / 11 / span 3 / span 2;
-	clip-path: polygon(0 23%, 100% 0%, 100% 77%, 0% 100%);
-	background-color: #0dcfff;
+
+.area{
+    background: #d26d6d;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100vh;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+   
 }
 
-#stripes :nth-child(5) {
-	grid-area: 8 / 1 / span 5 / span 4;
-	clip-path: polygon(0 23%, 100% 0%, 100% 80%, 0% 100%);
-	transform: translateY(10px);
-	background-color: #1fa2ff;
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
 }

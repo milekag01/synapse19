@@ -1,0 +1,63 @@
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(https://images.pexels.com/photos/953214/pexels-photo-953214.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: -10;
+    background: #007991;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.contact-us-title {
+    font-family: 'Coiny', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.synapse-member-details {
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+    min-width: 273px;
+    min-height: 306px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.synapse-member-section {
+    display: flex;
+    margin: 0 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.synapse-member-section > div {
+    margin: 30px;
+}
+
+.synapse-member {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../assets/person.png);
+}
+
+.synapse-member:hover > .synapse-member-details {
+    opacity: 1;
+}
+
+.synapse-member:active > .sy

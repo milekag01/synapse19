@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Synapse'19</title>
+		<meta name="description" content="Grid Layout with Motion Hover Effect and Content Preview" />
+		<meta name="keywords" content="grid, css, layout, template, hover, content, gsap, tweenmax, overlay" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/event.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/eventback.css" /> -->
+		<script>
+			document.documentElement.className="js";
+			var supportsCssVars = function(){
+				var e,
+					t=document.createElement("style");
+				return t.innerHTML="root: { --tmp-var: bold; }",
+					   document.head.appendChild(t),
+					   e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),
+					   t.parentNode.removeChild(t),e
+			};
+			
+			supportsCssVars()||alert("Synapse'19 event list");
+		</script>
+	</head>
+	<body class="loading">
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+
+			<symbol id="icon-cross" viewBox="0 0 24 23">
+				<title>cross</title>
+				<path d="M23.865 3.677c.197-.383.164-.818-.008-1.18.048-.41-.06-.827-.448-1.147L22.323.457c-.636-.524-1.632-.689-2.25 0a155.348 155.348 0 0 1-8.797 9.001C9.011 7.342 6.72 5.255 4.443 3.165c-.8-.734-1.956-.503-2.458.37C1.253 3.9.659 4.374.168 5.182c-.233.386-.215.872 0 1.258 1.47 2.635 4.31 4.951 6.646 7.083-.313.28-.623.562-.942.836-3.146 2.702-5.268 4.416-1.331 7.187.053.037.107.029.161.05.076.036.148.06.232.074.026 0 .05.005.075.003.082.007.16.027.243.011 2.117-.415 4.085-2.074 5.872-3.9 1.74 1.715 3.592 3.353 5.63 4.325.485.232 1.063.097 1.436-.227.626.047 1.197-.342 1.484-.901.042-.026.07-.041.116-.07.91-.569.993-1.701.32-2.482-1.522-1.762-3.138-3.438-4.787-5.084 2.968-2.9 6.674-6.027 8.542-9.667z"/>
+			</symbol>
+		</svg>
+		<main>
+			<div class="content">
+				<header class="codrops-header">
+					<!--  -->
+				</header>
+			</div>
+			<div class="content">
+				<div class="grid">
+					<a class="grid__item" href="#preview-1">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="assets/events/rampage.jpg" alt="Some image"/>
+							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="Rampage">Rampage</span></h3>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Fashion</span></h4>
+							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-2">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="assets/events/footloose.jpg" alt="Some image"/>
+							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="Footloose">Footloose</span></h3>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Dance</span></h4>
+							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-3">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="assets/events/naach.jpg" alt="Some image"/>
+							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="Naach">Naach</span></h3>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Dance</span></h4>
+							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-4">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="assets/events/showdown.jpg" alt="Some image"/>
+							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="Showdown">Showdown</span></h3>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Dance</span></h4>
+							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-5">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="assets/events/raaga.jpg" alt="Some image"/>
+							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="Raaga">Raaga</span></h3>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Music</span></h4>
+							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-6">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="assets/events/rhapsody.jpg" alt="Some image"/>
+							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="rhapsody">rhapsody</span></h3>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Music</span></h4>
+							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-7">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="assets/events/masquerade.jpg" alt="Some image"/>
+							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="Masquerade">Masquerade</span></h3>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Dramatics</span></h4>
+							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-8">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="assets/events/battledrome.jpg" alt="Some image"/>
+							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="Battledrome">Battledrome</span></h3>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Gaming</span></h4>
+							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-9">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="assets/events/dj_wars.jpg" alt="Some image"/>
+							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="DJ wars">DJ wars</span></h3>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Music</span></h4>
+							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-10">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="assets/events/shailee.jpg" alt="Some image"/>
+							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="Shailee">Shailee</span></h3>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Literary</span></h4>
+							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-11">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="assets/events/headrush.jpg" alt="Some image"/>
+							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="headrush">headrush</span></h3>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Literary</span></h4>
+							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-12">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="assets/events/synocubix.jpg" alt="Some image"/>
+							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="synocubix">synocubix</span></h3>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Literary</span></h4>
+							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-13">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="assets/events/crazymaths.jpg" alt="Some image"/>
+							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="crazy">crazy</span></h3>
+							<h3 class="box__title box__title--bottom" style="bottom: 2rem;"><span class="box__title-inner" data-hover="Math">Math</span></h3>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">online</span></h4>
+							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-14">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="assets/events/googlelockholmes.jpg" alt="Some image"/>
+							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="googlock">googlock</span></h3>
+							<h3 class="box__title box__title--bottom "><span class="box__title-inner" data-hover="holmes">holmes</span></h3>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Online</span></h4>
+							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-15">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="assets/events/conceive.jpg" alt="Some image"/>
+							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="conceive">conceive</span></h3>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Technical</span></h4>
+							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-16">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="assets/events/forage.jpg" alt="Some image"/>
+							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="forage">forage</span></h3>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Technical</span></h4>
+							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-17">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="assets/events/da-rush.jpg" alt="Some image"/>
+							<h3 class="box__title box__title--straight "><span class="box__title-inner" data-hover="DA Rush">DA Rush</span></h3>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Fun</span></h4>
+							<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="overlay">
+				<div class="overlay__reveal"></div>
+				
+				<div class="overlay__item" id="preview-1">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="assets/events/rampage.jpg" alt="Some image"/>
+						<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner" style="color: white">Rampage</span></h3>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Fashion</span></h4>
+						<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+					</div>
+					<p class="overlay__content">
+						Will be updated soon.
+					</p>
+				</div>
+				<div class="overlay__item" id="preview-2">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="assets/events/footloose.jpg" alt="Some image"/>
+						<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner">Footloose</span></h3>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Dance</span></h4>
+						<div class="box__deco box__deco--top">&#10115;</div>
+					</div>
+					<div class="overlay__content">
+							<h2 class="event-name-modal">
+                            FOOTLOOSE
+                        </h2>
+                        <hr class="under_head">
+                        <p class="event-desc-modal">
+                            When you dance, your purpose is not to get a certain place on the floor. It's to enjoy each
+                            step of the way" ― Wayne Dyer
+                            <br>
+
+                            Dance is a form of expression through which you can find yourself in that moment and lose
+                            yourself in the captivating beats all at the same time. From salsa to contemporary to
+                            fusion, fasten your seatbelt, rock the stage and shake the world with your moves.
+                            <br>
+
+                            Footloose, is the biggest dancing event in Synapse. The preliminary round is held in the
+                            faculty mess. Later in the evening, selected contenders get a chance to perform in front of
+                            a jam-packed crowd in the OAT in the presence of the judges. Dance your way to victory.<br>
+                        </p>
+
+                        <h3 class="event-name-modal">Music</h3>
+                        <ul>
+                            <li class="event-desc-modal-li">Registered contestants have to report with their
+                                soundtracks.
+                            </li>
+                            <li class="event-desc-modal-li">No live music or projection is allowed.
+                            </li>
+                            <li class="event-desc-modal-li">Teams should bring music or songs (in MP3 or WAV format)
+                                that they want to use for their performance on a Hard drive or Pen Drive or they can
+                                even mail the soundtrack with the details of the team on s.footloose18@gmail.com
+                            </li>
+                            <li class="event-desc-modal-li">It is recommended that teams bring at least 2 copies, one
+                                for submission and the other for practice and as a backup. Audio cassettes are not
+                                allowed.
+                            </li>
+                            <li class="event-desc-modal-li">The music piece that the teams /individuals perform in the
+                                preliminary round must be a part of the main performance. (It means that the music that
+                                is to be used in main performance must be edited in a suitable manner to fit the time
+                                limits). Moreover, this music piece should be a continuous piece of the original
+                                soundtrack. This music (in MP3 or WAV format) for preliminary round must be given on a
+                                separate Hard Disk or a Pen Drive and also be mailed to s.footloose18@gmail.com
+                            </li>
+                            <li class="event-desc-modal-li">The music that is submitted for the performance should be
+                                within the time limits. The organizing team will not provide any assistance regarding
+                                the same.
+                            </li>
+                            <li class="event-desc-modal-li">The final music once submitted before the prelims are not
+                                subjected to any changes.
+                            </li>
+                            <li class="event-desc-modal-li">The required soundtrack for prelims and the finals must be
+                                mailed to us at s.footloose18@gmail.com at least 3 days before the performance. The
+                                soundtrack should also be submitted in the MP3/WAV format at least an hour before the
+                                performance, in a hard disk or pen drive.
+                            </li>
+                        </ul>
+                        <h3 class="event-name-modal">Props</h3>
+                        <ul>
+                            <li class="event-desc-modal-li">Props will have to be arranged by the participants
+                                themselves (unless mentioned otherwise). The props must come on with the performance and
+                                must not require extensive setup.
+                            </li>
+                            <li class="event-desc-modal-li">The props to be used should be pre-informed about before the
+                                prelims to the coordinators. In case of any ambiguity, the coordinator's decisions will
+                                be final.
+                            </li>
+                            <li class="event-desc-modal-li">The equipment we consider hazardous (such as fire, smoke,
+                                fog devices, knives, water) are not allowed.
+                            </li>
+                            <li class="event-desc-modal-li">In case any extra stage arrangement is required please give
+                                prior notification at least 10 -15 days before the event.
+                            </li>
+                        </ul>
+                        <h3 class="event-name-modal">Dance</h3>
+                        <ul>
+                            <li class="event-desc-modal-li">Classical or folk dancing or pure hip-hop is not allowed.
+                            </li>
+                            <li class="event-desc-modal-li">You have to prepare your dance within the time limits as
+                                mentioned above.
+
+                            </li>
+                            <li class="event-desc-modal-li">It is compulsory for the contestants participating in the
+                                duet category to perform together the whole time.
+                            </li>
+                            <li class="event-desc-modal-li">Team size for Group category is 8-15 people.
+                            </li>
+                            <li class="event-desc-modal-li">At any given time at least 5 people of a group in the group
+                                category must remain on the stage.
+                            </li>
+                            <li class="event-desc-modal-li">We also have an impromptu round for the final 2 teams in the
+                                Group category, to decide the winners, in which the teams will be asked to perform on a
+                                music clip given to them on stage. No time for preparation will be given to the teams.
+                            </li>
+                            <li class="event-desc-modal-li">Time limit for the impromptu round: 2 minutes
+                            </li>
+                        </ul>
+                        <h3 class="event-name-modal">General</h3>
+                        <ul>
+                            <li class="event-desc-modal-li">No limit on the number of teams from a college.
+                            </li>
+                            <li class="event-desc-modal-li">Top 5 teams will be picked up from each category.
+                            </li>
+                            <li class="event-desc-modal-li">Practice: The teams/individuals must bring their own music
+                                system for practice. The organizing team is not responsible for providing either space
+                                or music system for practice.
+                            </li>
+                            <li class="event-desc-modal-li">One member of the team should sit with the sound technician
+                                or computer operator.
+                            </li>
+                            <li class="event-desc-modal-li">In case of any issues, coordinators and judge’s decision
+                                will be final and binding.
+                            </li>
+                            <li class="event-desc-modal-li">Teams who have videos of their past performances are
+                                recommended to attach a YouTube link to the same while registration. However, these
+                                videos under no circumstances will be used for selection/elimination or any judgment
+                                criteria.
+                            </li>
+                            <li class="event-desc-modal-li">Participants are required to check the website frequently
+                                for any changes in the rules and regulations and specifications of the arena of the
+                                event.
+                            </li>
+                        </ul>
+
+                        <h3 class="event-name-modal">Judgment Criteria</h3>
+                        <p class="event-desc-modal">Choreography<br>
+                            Power Moves<br>
+                            Synchronization<br>
+                            Stage utilization<br>
+                            Energy level<br>
+                            Costumes<br>
+                            Overall impact<br>
+
+                        </p>
+
+					</div>
+				</div>
+				<div class="overlay__item" id="preview-3">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="assets/events/naach.jpg" alt="Some image"/>
+						<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner">Naach</span></h3>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Dance</span></h4>
+						<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+					</div>
+					<div class="overlay__content">
+						<center>Performance Related</center>
+
+						<ul>
+						<li>There are ₹200 participation charges for a team of 10
+						people. Charges will vary according to team size which
+						will be negotiated with the team.</li>
+						<li>For solo performances it is ₹100 and the person can
+						participate in any other solo event also.</li>
+						<li>If a participant registers in a group then he/she is
+						allowed to participate in solo event also.</li>
+						<li>Time duration for performances :
+							<ul>
+							<li>Solo - Time Limit: 5 Minutes</li>
+							<li>Duet/Trio - Time Limit: 7 Minutes</li>
+							<li>Group - Time Limit: 10 Minutes</li>
+							<li>There is no restriction on the song as long as the
+							dance forms are semi-classical or folk.</li>
+							<li>1-2 min of setup time is allowed which is not
+							included in performance duration.
+							</ul>
+						</li>
+						<li>For group performance, the maximum size of each
+						group is 10.</li>
+						<li>Depending on the number of participants there may be
+						a preliminary round of which participants will be
+						informed in advance.</li>
+						<li>There may be changes in the event format for which
+						participants will be informed in advance.</li>
+						<li>All the participants need to report at the informed time if
+						not told otherwise. Participants arriving late shall not be
+						entertained.</li>
+						<center><b>Soundtrack</b></center>
+						<li>Live soundtrack is allowed but needs to be arranged by
+						participants themselves. Projection is not allowed.</li>
+						<li>Teams must send their FINAL soundtrack through mail
+						atleast before 4 days else you will be disqualified. The
+						subject of the mail should be NaachSoundtrack[Team
+						Name]. Send it to <a href="mailto:naach.synapse.2019@gmail.com">naach.synapse.2019@gmail.com.</a></li>
+						<li>The performance can be original or an adaptation. In
+						case of adaptation, it should be clearly specified along
+						with the source.</li>
+						<li>Soundtrack must meet the time limit constraints.</li>
+						<li>The soundtrack can be changed before 4 days of the
+						event.</li>
+						<li>Soundtrack must be in MP3 format.</li>
+						<center><b>Props</b></center>
+						<li>Props must be arranged by the participants only.</li>
+						<li>Participants should inform coordinators about the props
+						atleast 4 days before the performance by mail. The
+						subject of the mail should be NaachProps[TeamName].
+						Send it to <a href="mailto:naach.synapse.2019@gmail.com">naach.synapse.2019@gmail.com.</a></li>
+						<li>Hazardous props such as fire,smoke,fog devices,knives,
+						water etc. are NOT allowed.</li>
+						<center><b>General</b></center>
+						<li>Participants are required to check the website
+						frequently for any changes in the rules and regulations
+						and specification of the arena of the event.</li>
+						<li>Participants must bring their college ID cards and after
+						confirming their registration at help desk produce the 
+						token given to them at help desk before their
+						performance.</li>
+						<li>For practice, teams must bring their own music systems
+						for practice. Co-ordinators are not responsible for
+						providing either space or music system for practice.</li>
+						<li>In case of any issues, coordinators and judge´s decision
+						will be final.</li>
+						<li>One member of the team should coordinate with sound
+						technician or computer operator prior to the start of
+						event.</li>
+						<li>In case of any ambiguity, the coordinators’ decisions
+						will be final.</li>
+						</ul><br>
+						Contact<br>
+						Kavisha Mehta : +919428305205<br>
+						Dhwani Sagar: +918758594879<br>
+						Aneri Shah : +918401380858<br>
+						Rutvi Shah: +919558556123
+					</div>
+				</div>
+				<div class="overlay__item" id="preview-4">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="assets/events/showdown.jpg" alt="Some image"/>
+						<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner">Showdown</span></h3>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Dance</span></h4>
+						<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+					</div>
+					<div class="overlay__content">
+						<h2 class="event-name-modal">
+                            SHOWDOWN
+                        </h2>
+                        <hr class="under_head">
+                        <p class="event-desc-modal">
+                            Are you ready for some real competition. Show your creative dancing talents using props.
+                        </p>
+
+                        <h3 class="event-name-modal">RULES</h3>
+
+                        <h3 class="event-name-modal">Eliminations</h3>
+
+                        <ul>
+                            <li class="event-desc-modal-li">A prepared 2-minute performance by each participant.
+
+                            </li>
+                            <li class="event-desc-modal-li">A group of 3 participants will be given a prop each, with
+                                which they'll perform on a song for a minute.
+                            </li>
+                            <li class="event-desc-modal-li">Then the props will be interchanged among themselves and
+                                hence 3 such rounds of 1 minute each will be conducted between 3 participants.
+                            </li>
+                            <li class="event-desc-modal-li">So, the elimination round will be a total of 9 minutes for 3
+                                participants.
+                            </li>
+                        </ul>
+
+                        <h3 class="event-name-modal">Judging criteria</h3>
+                        <p class="event-desc-modal"><br>
+                            Choreography<br>
+                            Expressions
+                            <br>
+                            Stage presence<br>
+                            SCreativity in using props<br>
+                        </p>
+
+                        <h3 class="event-name-modal">NOTE
+                        </h3>
+
+                        <ul>
+                            <li class="event-desc-modal-li"> 2.5% of total score will be deducted for each minute above
+                                the time limit.
+                            </li>
+                            <li class="event-desc-modal-li">If a participant steps out of the dancing area, he/she will
+                                be warned once and on repetition, would be disqualified.
+                            </li>
+                            <li class="event-desc-modal-li">From all, 8 participants would qualify for the finals.
+                            </li>
+                        </ul>
+
+                        <h3 class="event-name-modal">Judging criteria
+                        </h3>
+
+                        <p class="event-desc-modal"><br>
+                            Entertainment factor<br>
+                            Spontaneity
+                            <br>
+                            Creativity
+                            <br>
+                            Every round will be impromptu except the first point mentioned in the eliminations. <br>
+                            We are planning to give 2 sizzling prizes- Winner and Runner-Up. <br>
+                        </p>
+
+                        <h3 class="event-name-modal">NOTE</h3>
+                        <ul>
+                            <li class="event-desc-modal-li">If a participant steps out of the dancing area, he/she will
+                                be penalized.
+
+                            </li>
+                            <li class="event-desc-modal-li">The decisions of the organizing team will be final and
+                                binding under all circumstances.
+                            </li>
+                            <li class="event-desc-modal-li">Violation of any rule would lead to disqualification of the
+                                participant.
+                            </li>
+                        </ul>
+					</div>
+				</div>
+				<div class="overlay__item" id="preview-5">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="assets/events/raaga.jpg" alt="Some image"/>
+						<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner">Raaga</span></h3>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Music</span></h4>
+						<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+					</div>
+					<div class="overlay__content">
+						<h2 class="event-name-modal">
+                            RAAGA
+                        </h2>
+                        <hr class="under_head">
+                        <p class="event-desc-modal">
+                            Lose yourself behind in the magical atmosphere as you are taken on a symphonic ride. Show
+                            off your skills with your melodious voice, harmonious instruments and favourite tunes. <br>
+                            Raaga is a one day event including two categories: <br>
+                            Indian Solo<br>
+                            Indian Group<br><br>
+                        </p>
+
+                        <h3 class="event-name-modal">RULES</h3>
+
+                        <ul>
+                            <li class="event-desc-modal-li">Solo performances shall be allotted a maximum of 3 minutes
+                                for each performance in the Prelims Round (this time is inclusive of the time for
+                                setting and mic testing).
+                            </li>
+                            <li class="event-desc-modal-li">Solo performances shall be allotted a maximum of 5 minutes
+                                for each performance in the Final Round (this time is inclusive of the time for setting
+                                and mic testing).
+                            </li>
+                            <li class="event-desc-modal-li">Group performances shall be allotted a maximum of 7 minutes
+                                for each performance in the Prelims Round (this time is inclusive of the time for
+                                setting and mic testing).
+                            </li>
+                            <li class="event-desc-modal-li">Group performances shall be allotted a maximum of 15 minutes
+                                for each performance in the Final Round (this time is inclusive of the time for setting
+                                and mic testing).
+                            </li>
+                            <li class="event-desc-modal-li">In Group category the group size has to be between 2-20.
+                                Duet performers must enroll themselves in Group category.
+                            </li>
+                            <li class="event-desc-modal-li">Time constraints shall be maintained strictly. Negative
+                                points exceeding the time limit.
+                            </li>
+                        </ul>
+                        <h3 class="event-name-modal">JUDGING CRITERIA</h3>
+                        <ul>
+                            <li class="event-desc-modal-li">All the contestants registered for the event shall be
+                                performing in the Prelims round, out of which only a few will enter the Final round.
+                                (Based on the decisions of the respective judges).
+                            </li>
+                            <li class="event-desc-modal-li">Number of performances to make out to finals will be :<br>
+                                <ul>
+                                    <li>Solo : 10 from each category
+                                    </li>
+                                    <li>
+                                        Group : 5 from each category
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+					</div>
+				</div>
+				<div class="overlay__item" id="preview-6">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="assets/events/rhapsody.jpg" alt="Some image"/>
+						<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner">Rhapsody</span></h3>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Music</span></h4>
+						<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+					</div>
+					<div class="overlay__content">
+						<h2 class="event-name-modal">
+                            RHAPSODY
+                        </h2>
+                        <hr class="under_head">
+                        <p class="event-desc-modal">
+                            Lose yourself behind in the magical atmosphere as you are taken on a symphonic ride. Show
+                            off your skills with your melodious voice, harmonious instruments and favourite tunes. <br>
+                            Rhapsody is a one day event including two categories: <br>
+                            Western Solo<br>
+                            Western Indian Group<br>
+                            Instrumental<br>
+
+                        </p>
+
+                        <h3 class="event-name-modal">RULES</h3>
+
+                        <ul>
+                            <li class="event-desc-modal-li">Solo performances shall be allotted a maximum of 3 minutes
+                                for each performance in the Prelims Round (this time is inclusive of the time for
+                                setting and mic testing).
+                            </li>
+                            <li class="event-desc-modal-li">Solo performances shall be allotted a maximum of 5 minutes
+                                for each performance in the Final Round (this time is inclusive of the time for setting
+                                and mic testing).
+                            </li>
+                            <li class="event-desc-modal-li">Group performances shall be allotted a maximum of 7 minutes
+                                for each performance in the Prelims Round (this time is inclusive of the time for
+                                setting and mic testing).
+                            </li>
+                            <li class="event-desc-modal-li">Group performances shall be allotted a maximum of 15 minutes
+                                for each performance in the Final Round (this time is inclusive of the time for setting
+                                and mic testing).
+                            </li>
+                            <li class="event-desc-modal-li">In Group category the group size has to be between 2-20.
+                                Duet performers must enroll themselves in Group category.
+                            </li>
+                            <li class="event-desc-modal-li">Instrumental performances shall be allotted a maximum of 5
+                                minutes for
+                                each performance(this time is inclusive of the time for setting and mic
+                                testing).
+                            </li>
+                            <li class="event-desc-modal-li">There will be only Final round for Instrumental category.
+                            </li>
+                            <li class="event-desc-modal-li">All the instruments required shall be brought by the
+                                contestants only
+                                (Excluding Drums).
+                            </li>
+                            <li class="event-desc-modal-li">Time constraints shall be maintained strictly. Negative
+                                points exceeding the time limit.
+                            </li>
+                        </ul>
+					</div>
+				</div>
+				<div class="overlay__item" id="preview-7">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="assets/events/masquerade.jpg" alt="Some image"/>
+						<h3 class="box__title box__title--straight box__title--bottom" style="color: white;"><span class="box__title-inner">Masquerade</span></h3>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Dramatics</span></h4>
+						<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+					</div>
+					<div class="overlay__content">
+						<h2><center><b>Acte mono</b></center></h2>
+						<center>Monoacting</center>
+						<p>
+						The thrill of the stage and the excitement of the spotlight being on you throughout the stage time! An art perfected by a very few, all this requires is your skill to express and act. Rock the stage alone!
+						</p>
+						<p>
+						Rules :
+						</p>
+
+						<b>Time limit: 7 minutes</b>
+						<ol>
+						<li> Play could be in Hindi, English or bilingual.</li>
+						<li> Use of flammable substances like candle, matches, cigarettes, alcohol during performance on stage is not allowed and will result in disqualification. </li>
+						<li> The performance can be original or an adaptation. In case of adaptation, it should be clearly specified. </li>
+						<li> Any kind of vulgarity/obscenity will not be tolerated.</li>
+						<li> You should be accompanied by a maximum of 3 members as the light and sound technicians. </li>
+						<li> In any case the judges’ decision will be final.</li>
+						<li> Detail of props has to be submitted to the coordinators before hand.</li>
+						<li> The registration fees for the entire the performance would be Rs. 100. </li>
+						</ol>
+
+						<h2><center><b>COMIQUE</b></center></h2>
+
+						<center>Time Limit : 5 - 7 min.</center>
+
+						<ol>
+						<li>It will be an individual event. </li>
+
+						<li>Participation would be judged on the basis of content, fluency, spontaneity, presentation and sense of humor.</li>
+						<li>No participant is allowed to point out any individual, community or a religion in any way. </li>
+						<li>Participant can employ innuendos but straight away vulgarity, swear word, obscenity is strictly prohibited.K
+						Negative marking for exceeding time limit.</li>
+						<li>In case of any discrepancy, decision of the judges and co-ordinators would be final.</li>
+
+						<li>The registration fees for the entire the performance would be Rs. 100.</li>
+						</ol>
+
+						<h2><center><b>MIME</b></center></h2>
+
+						<center>Felicity</center>
+						<p>
+						Are words always necessary to express yourself? Imagine a world which consists of only words which are just said and not meant! Felicity is all about expressing your feelings through various forms of drama. If you can feel what you want to convey then words are not always necessary to express yourself.
+						</p>
+
+						<p>Rules :</p>
+
+						<b>Time limit: 10-12 mins</b>
+						<ol>
+						<li> Maximum number of participants is 8 on stage and 2 backstage.</li>
+						<li> Points will be deducted for vulgarity.</li>
+						<li> A short synopsis may be read out before the performance.</li>
+						<li> In all case decision of coordinators and judges will be final.</li>
+						<li> For any kind of clarification, please contact the Coordinator. Violation will result in negative points.</li>
+						<li> The registration fees for the entire team would be Rs. 200 inclusive of all masquerade events.</li>
+						</ol>
+
+						<h2><center><b>Naivete</b></center></h2>
+						<center>Street Play</center>
+						<p>
+						A tinge of imagination, shade of reality and desire to express social awareness is what Naivete is all about. It is more powerful than any other mode of theater because of its proximity between the audience and actors.
+						</p>
+
+						<p>Rules :</p>
+
+						<b>Time limit: 25 mins (including entry and exit)</b>
+						<ol>
+						<li> Language used can be Hindi or English or bilingual.</li>
+						<li> One team can have a maximum of 20 members.</li>
+						<li> Vulgarity is strictly prohibited.</li>
+						<li> Script should be original/self-written and should not be copied. If found guilty, would result in disqualification of team.</li>
+						<li> Any electronic device or recorded music is not allowed. Only live music is allowed.</li>
+						<li> Negative points for exceeding the time limit.</li>
+						<li> No other props are allowed apart from chunni, sticks and placards.</li>
+						<li> All types of musical instruments that do not require amplifier or any other electronic equipment are permitted.</li>
+						<li> In case of any dispute, coordinators and judges’ decision would be considered final.</li>
+						<li> Each team will have to submit the synopsis of their play by 10th of February to <a href="mailto:daiict.synapse.masquerade@gmail.com" >daiict.synapse.masquerade@gmail.com</a>. The finalists shall be informed by 12th February.</li>
+						<li> The registration fees for the entire team would be Rs. 200 inclusive of all masquerade events.</li>
+						 
+						</ol>
+
+						<h2><center><b>Proscenium</b></center></h2>
+						<center>Stage Play</center>
+						<p>
+						A live audience, a story and a spotlight shining on your face. If you were born to act, to enact the audience with your charisma then a night full of wonderful plays awaits you. Get ready for the ultimate drama-night where you will witness some of the most amazing stage-performers.
+						</p>
+
+						<p>Rules :,/
+						 
+						<b>Time limit: 40-75 minutes (including setup time)</b>
+						<ol>
+						<li> Play could be in Hindi, English or bilingual. </li>
+						<li> Use of substances like cigarettes, alcohol during performance on stage is not allowed and will result in disqualification.</li>
+						<li> The performance can be original or an adaptation. In case of adaptation, it should be clearly specified.</li>
+						<li> Any kind of vulgarity/obscenity will not be tolerated.</li>
+						<li> One team can have a maximum of 15 members on stage.</li>
+						<li> In any case judges’ decision will be final.</li>
+						<li> Detail of props has to be submitted to the coordinators before hand.</li>
+						<li> Each team can have a maximum of 4 backstage helpers including sound and light technician.</li>
+						<li> Each team will have to submit the synopsis of their play by 10th of February to <a href="mailto:daiict.synapse.masquerade@gmail.com">daiict.synapse.masquerade@gmail.com</a>. The finalists will be informed by 12th February.</li>
+						<li> The registration fees for the entire team would be Rs. 200 inclusive of all masquerade events.</li>
+
+						</ol>
+
+
+
+					</div>
+				</div>
+				<div class="overlay__item" id="preview-8">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="assets/events/battledrome.jpg" alt="Some image"/>
+						<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner" style="color: white;">Battledrome</span></h3>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Gaming</span></h4>
+						<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+					</div>
+					<div class="overlay__content">
+						<h2 class="event-name-modal">
+                            BATTLEDROME
+                        </h2>
+                        <hr class="under_head">
+                        <p class="event-desc-modal">
+                            Introducing LAN gaming arcade, to all the hardcore gamers... The biggest and the best gaming
+                            tournament is here. Test your gaming skills, compete with the players, conquer and be a pro.
+                            Display the best use of tactics, strategy and planning in the games at this gaming platform
+                            and get recognized for your gaming skills.
+                        </p>
+                        <h3 class="event-name-modal">Rules and Regulations</h3>
+
+                        <ul>
+                            <li class="event-desc-modal-li">​​Participants have to register as soon as possible on the
+                                first day. If we will have enough registrations, they will be closed.
+                            </li>
+                            <li class="event-desc-modal-li">Participation in Counter-strike and Dota 2 will be accepted
+                                in the team format(team of 5 members)and in Age of empire(team of 3 members) If you
+                                can't build a team, you can register solo, we will try to form a team for you. It will
+                                depend upon the participation.
+                            </li>
+                            <li class="event-desc-modal-li">​​If participants want to use game controllers they can
+                                bring their own or we will provide from here but we suggest you bring your own.
+                            </li>
+                            <li class="event-desc-modal-li">​​Each participant or team will be provided a time slot for
+                                the games so please try to avoid coming to the lab for nothing and you need to be
+                                present 15 mins before the time-slot allotted to the particular team or member, you can
+                                contact us for any queries.
+                            </li>
+                            <li class="event-desc-modal-li">If participants can't come to the event in allotted time
+                                slots, it will be their responsibility and thereafter our decision will be final.
+                            </li>
+                            <li class="event-desc-modal-li">Participants will have to show the registration at the desk.
+                            </li>
+                            <li class="event-desc-modal-li">​​The matchmaking will be done by us so please don't ask us
+                                to change it. The matchmaking will be done by us and it will be final.
+                            </li>
+                            <li class="event-desc-modal-li">Any type of cheating, misbehavior or violence shall not be
+                                tolerated and we have right to disqualify and take action accordingly for it.
+                            </li>
+                            <li class="event-desc-modal-li">The coordinator’s decision will be final and we have right
+                                to change the rules if needed.
+                            </li>
+                        </ul>
+                        <br>
+                        <h3 class="event-name-modal">Counter-Strike</h3>
+                        <p class="event-desc-modal">
+                            Global Offensive<br>
+                            Delve into the world of terrorists, CT's, where your ears pound with the sound of gunshots
+                            and bombs. Remember, aim and game sense is the strategy.<br>
+                            
+                            <br>
+                        </p>
+                        <h3 class="event-name-modal">DOTA 2</h3>
+                        <p class="event-desc-modal">The very best players will be butted against each other in this game
+                            which demands perfect team management and planning.
+                            This game will surely test your strategies to no end.<br>
+
+
+                            <br>
+                        </p>
+                        <h3 class="event-name-modal">Age of Empires 2</h3>
+                        <p class="event-desc-modal">
+
+                            Set in the middle ages, Age of Empires II is focused in the Spanish conquest of Mexico
+                            Test your skills in this strategy game.<br>
+
+
+
+                            <br>
+                        </p>
+                        <h3 class="event-name-modal">Need for Speed: Most Wanted</h3>
+                        <p class="event-desc-modal">
+
+                            The street is your kingdom. Your friends are your allies. You are on the wanted list of the
+                            State police department. Race through the city at breakneck speed, dodging cops, clearing
+                            milestones to be the ultimate NFS pro.<br>
+
+
+
+                            <br>
+                        </p>
+                        <h3 class="event-name-modal">Mini-Militia
+                        </h3>
+                        <p class="event-desc-modal">
+
+                            Hear the whiz of bullets flying past your face as you tumble for over outsmart the enemy
+                            with a well-placed grenade and watch them explode into bloody confetti.<br>
+
+
+                        </p>
+                        <h3 class="event-name-modal">Clash Royale</h3>
+                        <p class="event-desc-modal">
+
+                            Featuring one of the most popular mobile games in the tournament!
+                            Enter the Arena and Prove your worth!<br>
+
+
+
+                        </p>
+                        <h3 class="event-name-modal">Need for Speed: Most Wanted</h3>
+                        <p class="event-desc-modal">
+
+                            Newest: Counter-Strike: Global Offensive 1 vs 1<br>
+
+                            Introducing the exclusive 1vs1 tournament for one of the most popular and played esports in
+                            the World.<br>
+
+
+                            <br>
+                        </p>
+                        <h3 class="event-name-modal">FIFA 15</h3>
+                        <p class="event-desc-modal">
+                            If you think you are the one who can control every player and compete against the best in
+                            the game, then this is where you ought to be.<br>
+
+
+                            <br>
+                        </p>
+					</div>
+				</div>
+				<div class="overlay__item" id="preview-9">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="assets/events/dj_wars.jpg" alt="Some image"/>
+						<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner">DJ Wars</span></h3>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Music</span></h4>
+						<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+					</div>
+					<div class="overlay__content">
+						<h2 class="event-name-modal">
+                            DJ WARS
+                        </h2>
+                        <hr class="under_head">
+
+                        <p class="event-desc-modal">I am a DJ. I get the party started. So rock this Synapse by matching
+                            your beats with our
+                            pulse and win prizes.<br>
+                        </p>
+
+                        <h3 class="event-name-modal">Registration</h3>
+
+                        <ul>
+                            <li class="event-desc-modal-li">​​Participants must fill submit a 12-13 min demo mix in <a
+                                    href="https://goo.gl/forms/3wOjbvRysgRSHwri2">this</a>
+                                form
+                            </li>
+                            <li class="event-desc-modal-li">The demo mix shall be mixed with professional hardware. List
+                                of equipment used MUST be included.
+                            </li>
+                            <li class="event-desc-modal-li">​​The demo mix shall not contain pre-mixed/edited tracks or
+                                mash-ups
+                            </li>
+                            <li class="event-desc-modal-li">​​The demo mix may contain acapellas.
+
+                            </li>
+                            <li class="event-desc-modal-li">The demo mix shall not contain any Bollywood / desi samples.
+                                This is due to copyright issues
+
+                            </li>
+                            <li class="event-desc-modal-li">Complete track-listing with artist name, track name & mix
+                                name must be submitted in the fields provided.
+                            </li>
+                            <li class="event-desc-modal-li">​​All information which you provide must be true and
+                                complete – we reserve the right to disqualify entrants if we have reason to believe
+                                their information is incorrect, they are not eligible or that they have cheated
+                            </li>
+                            <li class="event-desc-modal-li">Selected participants will be invited to play their set on 2
+                                Pioneer CDJ 2000s and DJM-750 mixer
+                            </li>
+                        </ul>
+
+                        <h3 class="event-name-modal">Rules</h3>
+
+                        <ul>
+                            <li class="event-desc-modal-li">​​Each participant will be given 8-10 minutes(tentatively)
+                                for their performance
+
+                            </li>
+                            <li class="event-desc-modal-li">Participants must bring their IDs to the event
+                            </li>
+                            <li class="event-desc-modal-li">​​Participants must export their tracks and bring them on a
+                                flash drive
+                            </li>
+                            <li class="event-desc-modal-li">​​External equipment other than headphones not allowed
+                            </li>
+                            <li class="event-desc-modal-li">Pre-edited / Pre-Mixed tracks will not be allowed. (No tempo
+                                correction / Key correction).
+
+                            </li>
+                            <li class="event-desc-modal-li">Contestants will be required to showcase a set that contains
+                                tracks of varying BPM by adjusting the tempo control live on the CD player.
+                            </li>
+                            <li class="event-desc-modal-li">​​Pre-made mashups are not allowed. Acapellas are allowed.
+
+                            </li>
+                            <li class="event-desc-modal-li">Bollywood / desi samples are not allowed. This is due to
+                                copyright issues
+
+                            </li>
+                            <li class="event-desc-modal-li">Participants will be judged on the basis of their mixing
+                                skills, track selection, use of fx and crowd reaction
+                            </li>
+                        </ul>
+                        <br>
+
+                        <p class="event-desc-modal">Soundtrack
+                        </p>
+                        <ul>
+                            <li class="event-desc-modal-li">No​​ live​​ soundtrack​​ or ​​projection​ ​is ​​allowed.
+
+                            </li>
+                            <li class="event-desc-modal-li">The performance can be original or an adaptation. In case of
+                                adaptation, it should be clearly specified.
+                            </li>
+                            <li class="event-desc-modal-li">Soundtrack ​​must ​​meet ​​the​​ time ​​limit​​ constraints.
+
+                            </li>
+                            <li class="event-desc-modal-li">
+                                The soundtrack can​​ be ​​changed ​​before​​ 1 ​​week​​ of ​​the ​​event.
+                            </li>
+                            <li class="event-desc-modal-li">​​Soundtrack​​ must ​​be ​​in​​ MP3​​ format.
+                            </li>
+                        </ul>
+                        <br>
+					</div>
+				</div>
+				<div class="overlay__item" id="preview-10">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="assets/events/shailee.jpg" alt="Some image"/>
+						<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner">Shailee</span></h3>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Literary</span></h4>
+						<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+					</div>
+					<div class="overlay__content">
+						<h2 class="event-name-modal">
+                            SHAILEE
+                        </h2>
+                        <hr class="under_head">
+                        <h3 class="event-name-modal">Writing Contest</h3>
+                        <p class="event-desc-modal">Writing your heart out and earning for it? That's the dream! So get
+                            your laptops and typewriters ready, because the hunt is on!<br>
+                            The topics for the contest will be announced soon and you'll be given a week's time and all
+                            the world's resources to fill your paper with the breathing of your heart. Pen down a story,
+                            an essay, a poem, a letter, a play or even an email if you want. Take the topic to a
+                            creative destination and be handsomely rewarded for it!
+                            <br>
+                        </p>
+                        <h3 class="event-name-modal">Spelling Bee</h3>
+                        <p class="event-desc-modal">Crack the spellings of a broad selection of beautiful words with
+                            varying level of difficulties as you go higher and higher in this unconventional spelling
+                            bee, watch out for some twists and turns along the way and win awesome prizes along with the
+                            satisfaction of showing off your skills! The event is sure to leave you 'spell'-bound and
+                            asking for more towards the end.
+                            <br>
+                        </p>
+                        <h3 class="event-name-modal">Poetry Slam
+                        </h3>
+                        <p class="event-desc-modal">Shailee invites all the poets out there to exhibit their skills and
+                            engage with fellow poets in our poetry slam event. This is going to be a fun event which
+                            will be held in front of a live audience. So get ready to employ your creativity and relish
+                            some brilliant poetry. Also, don't forget there are goodies to be won!
+                            <br>
+                        </p>
+                        <h3 class="event-name-modal">Author's Session</h3>
+                        <p class="event-desc-modal">Formerly graced by the presence of the bestselling Indian author
+                            Ashwin Sanghi in the DA-IICT campus, this year, Shailee is back with yet another marvelous
+                            and once-in-a-lifetime opportunity to have a wonderful and worthwhile meet-and-greet with a
+                            famous bestselling author! Take in all the expert has to share and later have a book signed
+                            by them in your shelf!
+                            <br>
+                        </p>
+                        <h3 class="event-name-modal">Literature Quiz
+                        </h3>
+                        <p class="event-desc-modal">Do you take pride in knowing the authors of any book that your
+                            friend mentions?<br>
+                            Do you have famous quotes and lines at your fingertips?
+                            Well, if the answer to the above question is yes, then Shailee presents to you the
+                            Literature Quiz, a perfect opportunity to battle it out with other litterateurs and win
+                            amazing prizes. The quiz will be held in two rounds, the preliminary or the elimination
+                            round and the final round.
+                        </p>
+                        <h3 class="event-name-modal">Workshops
+                        </h3>
+                        <p class="event-desc-modal">Shailee has a few surprise events planned out just for you. We have
+                            a couple of experts from different fields to conduct hands-on workshops which are guaranteed
+                            to give you a fun learning experience. So hold on to your hats! <br><br>
+					</div>
+				</div>
+				<div class="overlay__item" id="preview-11">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="assets/events/headrush.jpg" alt="Some image"/>
+						<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner" style="color: white;">Headrush</span></h3>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Literary</span></h4>
+						<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+					</div>
+					<div class="overlay__content">
+						<h2 class="event-name-modal">
+                            HEADRUSH
+                        </h2>
+                        <hr class="under_head">
+                        <p class="event-desc-modal">Want to give your grey cells some work out? Headrush is the place to
+                            be.
+                            With quizzes for all your interests, Headrush promises to be a bigger odyssey than the space
+                            one!
+                        </p>
+					</div>
+				</div>
+				<div class="overlay__item" id="preview-12">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="assets/events/synocubix.jpg" alt="Some image"/>
+						<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner">Synocubix</span></h3>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Literary</span></h4>
+						<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+					</div>
+					<p class="overlay__content">
+						Will be updated soon.
+					</p>
+				</div>
+				<div class="overlay__item" id="preview-13">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="assets/events/crazymaths.jpg" alt="Some image"/>
+						<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner">Crazy Math</span></h3>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Dance</span></h4>
+						<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+					</div>
+					<div class="overlay__content">
+						Hey there mathletes, who love to solve some of the math craziest problems, we give you a chance to show your amazing mathematical skills at our math marathon.<br>
+
+						<center>Rules</center>
+						<ul>
+						<li>There will be 2 normal rounds.After that there will be one Playoff round and  final round.</li>
+						<li>The first round will consist of 30 short MCQs.After the first round, top 30 participants will be selected.</li>
+						<li>The second round will contain MCQs as well as integer type questions,puzzle type questions and many more types of questions. Top 4 contestants will be selected after ending of second round. </li>
+						<li>The third round will be Playoff round. Top 2 participants will play “Qualifier 1” ,another two will play “Eliminator”. After that there will be “Qualifier 2” between “Qualifier 1 Loser” and “Eliminator Winner”. </li>
+						<li> There will be a final battle between top 2 participants.</li>
+						<li>Further rules will be provided to you at a time of the event.</li>
+						<li>In case of problem in questions or anything else, the decision of the coordinator would be final.</li>
+						</ul>
+
+						Contact<br>
+									Chintan Thakkar - 9664851894<br>
+									Sagar Dhandhalya - 9081606040
+
+					</div>
+				</div>
+				<div class="overlay__item" id="preview-14">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="assets/events/googlelockholmes.jpg" alt="Some image"/>
+						<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner" style="color: white">Googlock Holmes</span></h3>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Online</span></h4>
+						<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+					</div>
+					<div class="overlay__content">
+						<h2 class="event-name-modal">
+                            GOOGLOCK HOLMES
+                        </h2>
+                        <hr class="under_head">
+                        <br>
+                        <h3 class="event-name-modal">Rules</h3>
+                        <ul>
+                            <li class="event-desc-modal-li">​​There will be puzzles, mind-twisting questions and also
+                                questions based on pictures in this event.
+                            </li>
+                            <li class="event-desc-modal-li">To participate in the event, the team size must be two.
+                            </li>
+                            <li class="event-desc-modal-li">​​There are no restrictions on searching for the questions.
+                                You can search on any search engine and take reference from any site of your choice.
+                            </li>
+                            <li class="event-desc-modal-li">The event will be live for only 120 minutes.
+
+
+                            </li>
+                            <li class="event-desc-modal-li">There will be three prizes for the winner and the first and
+                                second runner-ups. The positions will be decided solely on the basis of individual
+                                timings.
+
+
+                            </li>
+                            <li class="event-desc-modal-li">No clarifications regarding the questions or the clues will
+                                be given during the event.
+
+
+                            </li>
+                            <li class="event-desc-modal-li">​​Bring pens and papers along with yourself as you might
+                                need them during the event.
+
+
+                            </li>
+                            <li class="event-desc-modal-li">This being an Online event, everyone can participate in this
+                                event even from their homes but the ones participating in this event from DA-IICT labs
+                                will be eligible for winner's position.
+                            </li>
+                            <li class="event-desc-modal-li">Further rules will be given at the time of the event.
+
+
+                            </li>
+                        </ul>
+					</div>
+				</div>
+				<div class="overlay__item" id="preview-15">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="assets/events/conceive.jpg" alt="Some image"/>
+						<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner" style="color: white">Conceive</span></h3>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Technical</span></h4>
+						<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+					</div>
+					<div class="overlay__content">
+						<h2 class="event-name-modal">
+                            CONCEIVE
+                        </h2>
+                        <hr class="under_head">
+                        <p class="event-desc-modal">
+                            Taking pictures is savoring life intensely, every hundredth of a second. Life goes on, but a
+                            photograph is a memento of that moment. A photograph has the ability to convey emotion,
+                            mood, narrative, ideas, and messages – all of which are important elements of storytelling.
+                            We celebrate photography as an art and provide you with the opportunity to compete with the
+                            best in this genre and showcase your talent. Capture moments and make a story from them on
+                            given theme.
+                            <br>
+
+                        </p>
+                        <h3 class="event-name-modal">Rules</h3>
+                        <ul>
+                            <li class="event-desc-modal-li">​​Camera Resolution should be at least 3.2 megapixels.
+
+                            </li>
+                            <li class="event-desc-modal-li">Photographs must be clicked on a date later than given date.
+
+                            </li>
+                            <li class="event-desc-modal-li">​​One without EXIF data (and hence the date) will not be
+                                accepted. Make sure that your camera date is set before you click a picture.
+                            </li>
+                            <li class="event-desc-modal-li">With photo editing, only global editing i.e. cropping and
+                                adjustment of hue/saturation; brightness/contrast levels are allowed. Photo-morphing,
+                                manipulations, use of software like the classroom or local editing is not allowed.
+                            </li>
+                            <li class="event-desc-modal-li">Participants have to submit both the edited and original
+                                entries for judging.
+                            </li>
+                            <li class="event-desc-modal-li">Participants have to submit an overall description of the
+                                photo-story not exceeding 80 words. Individual photo-captions are not allowed.
+
+                            </li>
+                            <li class="event-desc-modal-li">​​Do not include your credentials (name, address etc),
+                                watermarks in the picture or the frame. Such photos will be disqualified.
+                            </li>
+                            <li class="event-desc-modal-li">Once the best photo-stories are shortlisted, the concerned
+                                participants will be asked to submit the scanned copy of their present college ID card.
+
+                            </li>
+                            <li class="event-desc-modal-li">The decision of judges will be final and binding.
+                            </li>
+                            <li class="event-desc-modal-li">Any sign of plagiarism will lead to disqualification.
+
+                            </li>
+                        </ul>
+
+					</div>
+				</div>
+				<div class="overlay__item" id="preview-16">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="assets/events/forage.jpg" alt="Some image"/>
+						<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner">Forage</span></h3>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Technical</span></h4>
+						<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+					</div>
+					<p class="overlay__content">
+						Will be updated soon.
+					</p>
+				</div>
+				
+				<div class="overlay__item" id="preview-17">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="assets/events/da-rush.jpg" alt="Some image"/>
+						<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner">DA Rush</span></h3>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Fun</span></h4>
+						<!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+					</div>
+					<div class="overlay__content">
+						Basic rules:
+
+						<ol>
+						<li> Participations would be done as a team of approximately 5-10 people
+						depending upon the total number of participants. If you are not able to
+						form a team then just register yourselves. We'll help you form the team.</li>
+						<li> Registration will begin on 8:00 AM, 23rd February. There would be onthe-spot registrations. Important thing to be noted is that the
+						registrations would be closed 1 hour prior to the starting time of the
+						event.</li>
+						<li> Participation fees is Rs. 200 per team which would consist of 10 people;
+						i.e. 20 Rs. per person. This can differ according to the number of
+						participants we have.</li>
+						<li> The event will begin at 12 noon, 23rd Feb.</li>
+						<li> There would be 3 rounds:</li>
+						<ol>
+						<li> Beg-Borrow-Steal</li>
+						<li> Treasure Hunt </li>
+						<li> Fun Games </li>
+						</ol>
+
+						Rules for Beg-Borrow-Steal:
+						<ol>
+
+						<li> Each team will be given a list of 25 items which they'll have to get by
+						either begging, borrowing or stealing.</li>
+						<li> Team would be given 1 hour to complete the task.</li>
+						<li> Team who gets the maximum items would be considered as winners for
+						the particular round and number of winning teams would be decided
+						according to the total number of teams participated.</li>
+						<li> Only the winning teams will proceed to the next round and the losing
+						teams won't get any prizes.</li>
+						<li>
+						Rules for treasure hunt:
+						<ol>
+						<li> Treasure hunt will begin in 20-30 min as soon as the BBS gets over.</li>
+						<li> There would be 6-8 clues given to each team.</li>
+						<li> Some places outside DA-IICT is also included (such as CCD or any</li>
+						other place) so team must decide on their own how to get those clues.
+						For non-DA students, maps will be provided. So no need to worry.
+						<li> There would be some winning teams just as BBS which would depend
+						on the number of winning teams of first round and they would proceed
+						to the final round.</li>
+						</ol>
+						</li> 
+						Rules for Fun Games:
+						Fun games and events to be played will be told to you on the spot.
+						The final round shall also begin in 20-30 min after treasure hunt. 
+					</div>
+				</div>
+				
+				<button class="overlay__close"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
+			</div>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo.js"></script>
+	</body>
+</html>

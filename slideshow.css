@@ -4,7 +4,7 @@
     text-align: center;
     right: 0;
     padding: 0 !important;
-    bottom: 30px;
+    bottom: 80px;
     z-index: 999;
   }
   .pagination__item {
@@ -1556,9 +1556,10 @@
     padding: 0;
   }
   
-  @media (max-width: 699px) {
+  @media (max-width: 720px) {
     .o-button.-square {
       width: 60px;
+      display: none;
     }
   }
   @media (min-width: 700px) {
