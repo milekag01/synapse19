@@ -11,7 +11,7 @@
   align-items: center;
   background: #000;
   transition: 3s;
-  z-index: 1;
+  /* z-index: 1; */
   background-position: center;
 
 }
