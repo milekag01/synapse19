@@ -4,7 +4,7 @@
             $('.preloader').addClass('complete')
             $('.loader').addClass('complete1')
             setTimeout(function(){
-              $('.preloader').css("z-index", "0");
+              $('.preloader').css("display", "none");
             }, 3500)
           }
   )
