@@ -19,39 +19,39 @@
     text-align: center;
     color: white;
     padding: 15px;
-    font-size: 20px;
+    font-size: 16px;
     max-width: 55rem;
     margin: 0 auto;
 }
 
 @media (max-width: 1150px){
     .aboutcontent{
-        font-size: 18px;
+        font-size: 14px;
         max-width: 45rem;
     }
 }
 @media (max-width: 1030px){
     .aboutcontent{
-        font-size: 18px;
+        font-size: 14px;
         max-width: 40rem;
     }
 }
 @media (max-width: 730px){
     .aboutcontent{
-        font-size: 18px;
+        font-size: 14px;
         max-width: 37rem;
         margin-top: -20px;
     }
 }
 @media (max-width: 650px){
     .aboutcontent{
-        font-size: 17px;
+        font-size: 14px;
         max-width: 34rem;
     }
 }
 @media (max-width: 600px){
     .aboutcontent{
-        font-size: 17px;
+        font-size: 14px;
         padding: 23px;
         max-width: 500px;
     }
@@ -59,7 +59,7 @@
 
 @media (max-width: 500px){
     .aboutcontent{
-        font-size: 14.5px;
+        font-size: 13px;
         padding: 23px;
         max-width: 500px;
         padding-top: 10px;
