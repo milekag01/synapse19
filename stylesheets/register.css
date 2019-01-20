@@ -8,7 +8,7 @@ body {
   background-repeat:  no-repeat;
   background-attachment: fixed;
   background-size:  cover;
-  background-color: #999;
+  background-color: #000;
 }
 
 div, body{
@@ -54,7 +54,7 @@ div, body{
 .navbar-wrapper > .navbar-right {
   flex: 1;
   justify-content: right;
-  display: flex;
+  display: inline-flex;
 }
 
 .navbar-register-button {
@@ -110,4 +110,10 @@ div, body{
 
 #contacts{
   color:red;
+}
+
+@media screen and (min-width: 520px){
+  .blog-title {
+    font-size: 1.5em;
+  }
 }
