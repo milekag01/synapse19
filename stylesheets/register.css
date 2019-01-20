@@ -53,8 +53,8 @@ div, body{
 
 .navbar-wrapper > .navbar-right {
   flex: 1;
-  justify-content: right;
   display: inline-flex;
+  flex-direction: row-reverse;
 }
 
 .navbar-register-button {
