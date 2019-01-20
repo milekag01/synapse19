@@ -112,7 +112,7 @@ div, body{
   color:red;
 }
 
-@media screen and (min-width: 520px){
+@media screen and (max-width: 520px){
   .blog-title {
     font-size: 1.5em;
   }
