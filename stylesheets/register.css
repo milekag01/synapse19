@@ -58,11 +58,12 @@ div, body{
 }
 
 .navbar-register-button {
-  color: #625b5b;
+  color: #FF0000;
   line-height: 36px;
-  border: 1px solid #a8a8a8;
+  border: 2px solid #FF0000;
   padding: 0 5px;
   text-decoration: none;
+  border-radius: 15px; 
 }
 
 .navbar-register-button:hover {
