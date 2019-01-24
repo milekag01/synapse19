@@ -48,6 +48,7 @@ body{
 @media (max-width: 600px){
     .contact-us-title {
         padding-top: 45px;
+        font-size: 24px;
     }
 }
 
