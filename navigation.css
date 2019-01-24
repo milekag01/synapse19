@@ -12,6 +12,7 @@
 .sidebar.sidebar_active{
     left: 0;
 }
+
 .toggle{
     position: absolute;
     top: 45%;
