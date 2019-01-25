@@ -10,11 +10,38 @@
         <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="loader.css"/>
         <link rel="stylesheet" href="stylesheets/contact.css">
+        <link rel="stylesheet" href="navigation.css">
+
+        <style>
+          .toggle::before {
+            border-top: 2px solid #000;
+            border-right: 2px solid #000;
+          }
+
+          .blur {
+            filter: blur(10px);
+          }
+
+        </style>
     </head>
     <body>
         
         <div class="preloader">
             <div class="loader"></div>
+        </div>
+
+        <div id="sidebar" class="sidebar">
+            <div class="toggle" onclick="toggle_div()"></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="register.html">Registration</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="/sponsor.html">Sponsors</a></li>
+                <li><a href="/gallery.html">Gallery</a></li>
+                <li><a data-fancybox data-width="640" data-height="360" href="https://player.vimeo.com/video/310331827" target="_blank">Aftermovie'18</a></li>
+                <li><a href="brochure.pdf" target="_blank">Brochure</a></li>
+                <li><a href="/contact.html">Synapse Team</a></li>
+            </ul>
         </div>
         
 		<a class="top-front-logo" href="/"><img src="logo.png"></a>
@@ -207,5 +234,15 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="/loader.js"></script>
+    <script>
+      // sidebar
+      function toggle_div(){
+          var element = document.getElementById('sidebar');
+          element.classList.toggle('sidebar_active');
+
+          var mainElement = document.getElementsByClassName("background")[0];
+          mainElement.classList.toggle("blur");
+      }
+    </script>
     </body>
 </html>
