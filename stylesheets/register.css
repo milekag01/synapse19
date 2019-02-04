@@ -2,15 +2,6 @@ html, body{
   height: 100%;
 }
 
-body {
-  background-image: url(/back3.jpg) ;
-  background-position: center center;
-  background-repeat:  no-repeat;
-  background-attachment: fixed;
-  background-size:  cover;
-  background-color: #000;
-}
-
 div, body{
   margin: 0;
   padding: 0;
@@ -46,6 +37,7 @@ div, body{
 }
 
 .navbar-logo-label {
+  padding-top: 0;
   line-height: 40px;
   color: black;
   margin: 0;
