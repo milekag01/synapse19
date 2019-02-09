@@ -11,9 +11,9 @@
 		<link rel="stylesheet" type="text/css" href="css/event.css" />
     <link rel="stylesheet" href="navigation.css">
 		<style>
-					.c2{
-						font-weight: bold;
-					}
+			.c2{
+				font-weight: bold;
+			}
 		</style>
 
 		<!-- <link rel="stylesheet" type="text/css" href="css/eventback.css" /> -->
@@ -34,10 +34,6 @@
       .toggle::before {
         border-top: 2px solid #000;
         border-right: 2px solid #000;
-      }
-
-      .blur {
-        filter: blur(10px);
       }
     </style>
 	</head>
@@ -1619,10 +1615,6 @@ will have to imitate on all the six sides.</li>
       function toggle_div(){
           var element = document.getElementById('sidebar');
           element.classList.toggle('sidebar_active');
-
-          // toggle blur effect of main
-          var mainElement = document.getElementsByTagName("main");
-          mainElement[0].classList.toggle("blur");
       }
     </script>
 	</body>
